@@ -1,0 +1,12 @@
+{
+  "name": "anatomy-modesty",
+  "private": true,
+  "type": "module",
+  "description": "Replaces the external genitalia in the Anatomy Explorer models with a smooth surface.",
+  "scripts": { "dry-run": "node modesty.mjs", "apply": "node modesty.mjs --write" },
+  "dependencies": {
+    "@gltf-transform/core": "4.1.1",
+    "@gltf-transform/extensions": "4.1.1",
+    "meshoptimizer": "0.22.0"
+  }
+}
