@@ -8,14 +8,17 @@ Edits the Anatomy Explorer model files in place so the body suits a general audi
 - Vessels, ducts and nerves that ran into them are trimmed where they would cross the new surface.
 - The manifest drops the removed parts and gets updated bounds and triangle counts.
 
-It also needs one change in the app code, already made in this repo: in
-`anatomy-explorer/assets/index-*.js` the genital pattern `var Fn=/urogenital|penis|scrot|prepuce|glans/i`
-is replaced with `var Fn=/(?!)/`, so the Female body type no longer reshapes that area.
+`patch-app.mjs` makes two matching edits to the app code (both already made in this repo):
 
-Run it only on the original, unmodified models (for example after re-exporting the app):
+- The Female body type no longer reshapes the genital area, which rebuilt a bulge on the new surface.
+- Groin vertices blend smoothly between the left and right thigh instead of switching sides 5 mm from
+  the midline. The hard switch tore the new surface on the Elderly and other reshaped body types.
+
+Run the model step only on the original, unmodified models (for example after re-exporting the app);
+the code step is safe to repeat:
 
 ```
 npm install
-npm run dry-run   # prints what would change
-npm run apply     # writes the model files and manifest
+npm run dry-run   # prints what would change in the models
+npm run apply     # writes the model files and manifest, then patches the app code
 ```
