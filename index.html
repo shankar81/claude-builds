@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shankar's Claude Builds</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Interactive science explorers built with Claude: a 3D globe through 4.5 billion years of Earth history, and a human body you can peel layer by layer.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Science explorers built with Claude">
+<meta property="og:description" content="Earth Through Time and Anatomy Explorer. Both run in the browser, no sign-in needed.">
+<meta property="og:image" content="https://shankar81.github.io/claude-builds/assets/og.jpg">
+<meta property="og:url" content="https://shankar81.github.io/claude-builds/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0C0F13">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
+<style>
+/* Layout: each project is an exhibit on an asymmetric 7/5 grid, a dark screenshot plate beside a
+   field-guide label; the sides alternate. Each exhibit borrows its app's own accent colour. */
+:root {
+  --ground: #F3F4F1;
+  --surface: #FFFFFF;
+  --ink: #15191E;
+  --ink-2: #4B5560;
+  --ink-3: #66707B;
+  --line: #D7DBD5;
+  --plate: #0B0E12;
+  --earth: #1A6AA6;
+  --anat: #96530A;
+  --on-accent: #FFFFFF;
+  --f-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0C0F13; --surface: #13171D; --ink: #E7EAEE; --ink-2: #AAB2BC; --ink-3: #868F9A;
+    --line: #252C35; --plate: #05070A; --earth: #6CC4FF; --anat: #F2A541; --on-accent: #0C0F13;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0C0F13; --surface: #13171D; --ink: #E7EAEE; --ink-2: #AAB2BC; --ink-3: #868F9A;
+  --line: #252C35; --plate: #05070A; --earth: #6CC4FF; --anat: #F2A541; --on-accent: #0C0F13;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body {
+  margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--f-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent, var(--ink)); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.wrap { max-width: 1240px; margin-inline: auto; }
+.mono { font-family: var(--f-mono); }
+.label {
+  font: 500 12.5px/1.4 var(--f-mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* Top bar */
+.top { padding-block: 22px; }
+.top .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.name { font: 700 19px/1.2 var(--f-display); font-variation-settings: "wdth" 88, "opsz" 24; letter-spacing: -.01em; text-decoration: none; }
+.top nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.top nav a { font: 500 14px/1.4 var(--f-mono); color: var(--ink-2); text-decoration: none; }
+.top nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+/* Intro */
+.intro { padding-block: 48px 72px; }
+.intro .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; align-items: end; }
+.intro h1 {
+  margin-top: 14px;
+  font-size: clamp(42px, 6.4vw, 82px);
+  line-height: .98;
+  font-weight: 760;
+  font-variation-settings: "wdth" 84, "opsz" 96;
+  letter-spacing: -.025em;
+  max-width: 12ch;
+}
+.lede { margin-top: 24px; font-size: 21px; line-height: 1.5; color: var(--ink-2); max-width: 34em; }
+.lede strong { color: var(--ink); font-weight: 600; }
+
+.index { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.idx {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 14px 10px 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.idx:hover { border-color: var(--accent); transform: translateY(-1px); }
+.idx img { width: 116px; height: 76px; object-fit: cover; border-radius: 7px; background: var(--plate); }
+.idx-t { display: block; font: 700 19px/1.2 var(--f-display); font-variation-settings: "wdth" 90, "opsz" 24; }
+.idx-d { display: block; font-size: 15px; line-height: 1.45; color: var(--ink-2); margin-top: 3px; }
+.idx-go { font: 500 13px/1 var(--f-mono); color: var(--accent); white-space: nowrap; }
+
+/* Exhibits */
+#earth { --accent: var(--earth); }
+#anatomy { --accent: var(--anat); }
+.intro .idx.earth { --accent: var(--earth); }
+.intro .idx.anat { --accent: var(--anat); }
+
+.exhibit { border-top: 1px solid var(--line); padding-block: 72px; }
+.ex-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; align-items: start; }
+.exhibit.flip .ex-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.exhibit.flip .plates { order: 2; }
+
+.plates { display: grid; gap: 28px; }
+.plates figure { margin: 0; display: grid; gap: 10px; }
+.plate {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  max-width: 100%;
+  background: var(--plate);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px rgba(0, 0, 0, .55);
+}
+.plate img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+.plate:hover img { transform: scale(1.015); }
+.plate .go {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font: 500 13px/1 var(--f-mono);
+  color: #fff;
+  background: rgba(8, 10, 14, .78);
+  border: 1px solid rgba(255, 255, 255, .22);
+  padding: 8px 11px;
+  border-radius: 999px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.plate:hover .go, .plate:focus-visible .go { opacity: 1; transform: none; }
+.plates .second { width: 78%; justify-self: end; }
+.exhibit.flip .plates .second { justify-self: start; }
+figcaption { font: 400 13px/1.5 var(--f-mono); color: var(--ink-3); }
+figcaption b { font-weight: 500; color: var(--ink-2); }
+
+.card { display: grid; gap: 22px; position: sticky; top: 28px; min-width: 0; }
+.card-head, .card-body { display: grid; gap: 22px; min-width: 0; }
+.card .label { color: var(--accent); }
+.card h2 { font-size: clamp(34px, 3.8vw, 50px); line-height: 1; font-weight: 740; font-variation-settings: "wdth" 86, "opsz" 72; letter-spacing: -.02em; margin-top: -8px; }
+.tagline { font-size: 21px; line-height: 1.45; color: var(--ink-2); }
+.actions { display: flex; align-items: center; gap: 10px 16px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font: 600 16px/1 var(--f-display);
+  font-variation-settings: "wdth" 92, "opsz" 18;
+  text-decoration: none;
+  transition: filter .15s ease;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn svg { width: 16px; height: 16px; }
+.req { font: 400 13px/1.4 var(--f-mono); color: var(--ink-3); }
+.card p.body { color: var(--ink); max-width: 36em; }
+
+.card h3 { font-size: 17px; font-weight: 700; font-variation-settings: "wdth" 92, "opsz" 18; letter-spacing: .005em; margin-bottom: 8px; }
+.try { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 16px; line-height: 1.5; }
+.try li { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 8px; }
+.try li::before { content: ""; width: 6px; height: 6px; margin-top: .62em; border-radius: 1px; background: var(--accent); }
+.try b { font-weight: 600; }
+kbd { font: 500 13px/1 var(--f-mono); padding: 2px 6px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; background: var(--surface); }
+
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; margin: 0; padding-block: 18px; border-block: 1px solid var(--line); }
+.facts div { min-width: 0; }
+.facts dt { font: 700 30px/1 var(--f-display); font-variation-settings: "wdth" 84, "opsz" 48; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.facts dd { margin: 6px 0 0; font-size: 14.5px; line-height: 1.45; color: var(--ink-2); }
+
+/* Scale bars: eons for Earth, depth layers for anatomy */
+.scale { display: grid; gap: 10px; }
+.bar { display: flex; height: 18px; border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .08); }
+.bar span { display: block; min-width: 2px; }
+.legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font: 400 13px/1.4 var(--f-mono); color: var(--ink-2); }
+.legend li { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 10px; align-items: center; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .12); }
+.legend .n { font-variant-numeric: tabular-nums; color: var(--ink-3); text-align: right; }
+.scale p { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
+
+.meta { font-size: 14px; line-height: 1.55; color: var(--ink-3); display: grid; gap: 6px; }
+.meta b { color: var(--ink-2); font-weight: 600; }
+
+/* Footer */
+.foot { border-top: 1px solid var(--line); padding-block: 56px 72px; }
+.foot .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; }
+.foot h2 { font-size: 26px; font-weight: 700; font-variation-settings: "wdth" 88, "opsz" 36; margin-bottom: 12px; }
+.foot p { color: var(--ink-2); max-width: 38em; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; align-content: start; font: 400 14px/1.4 var(--f-mono); }
+.foot ul a { color: var(--ink); text-underline-offset: 4px; }
+.foot .label { margin-bottom: 6px; display: block; }
+
+@media (max-width: 960px) {
+  .intro .wrap, .ex-grid, .exhibit.flip .ex-grid, .foot .wrap { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  /* Narrow: title and button, then the screenshots, then the details. */
+  .card { display: contents; }
+  .card-head { order: -1; }
+  .exhibit.flip .plates { order: 0; }
+  .card-body { order: 1; }
+  .plates .second { width: 100%; }
+  .exhibit { padding-block: 56px; }
+}
+@media (max-width: 520px) {
+  body { font-size: 16.5px; }
+  .top nav a.hide-sm { display: none; }
+  .lede, .tagline { font-size: 19px; }
+  .idx { grid-template-columns: 84px minmax(0, 1fr); }
+  .idx img { width: 84px; height: 56px; }
+  .idx-go { display: none; }
+  .facts dt { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="name" href="./">Shankar Sawant</a>
+    <nav aria-label="Projects">
+      <a class="hide-sm" href="#earth">Earth Through Time</a>
+      <a class="hide-sm" href="#anatomy">Anatomy Explorer</a>
+      <a href="https://github.com/shankar81/claude-builds" target="_blank" rel="noopener">Source on GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro" aria-labelledby="intro-title">
+    <div class="wrap">
+      <div>
+        <p class="label">Built with Claude · October 2026</p>
+        <h1 id="intro-title">Science explorers I built with Claude</h1>
+        <p class="lede">A 3D globe that runs through <strong>4.5 billion years</strong> of Earth’s history, and a human body you can peel from <strong>skin to organs</strong>. Both run in your browser on a laptop, tablet or phone. No sign-in, nothing to install.</p>
+      </div>
+      <ul class="index" aria-label="Open a project">
+        <li>
+          <a class="idx earth" data-app href="earth-through-time/" target="_blank" rel="noopener">
+            <img src="assets/earth-pangaea.webp" alt="" width="1600" height="1000">
+            <span>
+              <span class="idx-t">Earth Through Time</span>
+              <span class="idx-d">Scrub the planet from its first crust to the next supercontinent.</span>
+            </span>
+            <span class="idx-go">Open ↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="idx anat" data-app href="anatomy-explorer/" target="_blank" rel="noopener">
+            <img src="assets/anatomy-muscles.webp" alt="" width="1440" height="900">
+            <span>
+              <span class="idx-t">Anatomy Explorer</span>
+              <span class="idx-d">Peel, pull apart and look up 3,293 parts of the body.</span>
+            </span>
+            <span class="idx-go">Open ↗</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <article class="exhibit" id="earth" aria-labelledby="earth-title">
+    <div class="wrap ex-grid">
+      <div class="plates">
+        <figure>
+          <a class="plate" data-app href="earth-through-time/" target="_blank" rel="noopener" aria-label="Open Earth Through Time">
+            <img src="assets/earth-today.webp" width="1600" height="1000" alt="Earth Through Time showing today's Earth over Africa and Europe, with a panel of planet conditions and a coloured geological timeline along the bottom.">
+            <span class="go">Open the globe ↗</span>
+          </a>
+          <figcaption><b>Today.</b> The panel tracks the planet’s conditions: O₂ 21 %, CO₂ 422 ppm, a 24-hour day, the Moon 384,400 km away.</figcaption>
+        </figure>
+        <figure class="second">
+          <a class="plate" data-app href="earth-through-time/" target="_blank" rel="noopener" aria-label="Open Earth Through Time at Pangaea" tabindex="-1">
+            <img src="assets/earth-pangaea.webp" width="1600" height="1000" loading="lazy" alt="The same view 252 million years ago: the supercontinent Pangaea, with eruptions glowing red over Siberia.">
+          </a>
+          <figcaption><b>252 million years ago.</b> Pangaea during the end-Permian die-off. The red glow over Siberia marks the eruptions that triggered it. CO₂ 2,000 ppm, average temperature 32 °C.</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+        <p class="label">4,567 million years ago → 250 million years ahead</p>
+        <h2 id="earth-title">Earth Through Time</h2>
+        <p class="tagline">An interactive 3D globe of the whole history of the planet. Drag the timeline and watch continents drift, oceans open and ice sheets come and go.</p>
+        <div class="actions">
+          <a class="btn" data-app href="earth-through-time/" target="_blank" rel="noopener">Open Earth Through Time
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+          <span class="req">Needs WebGL2 · best on a laptop</span>
+        </div>
+        </div>
+        <div class="card-body">
+        <p class="body">The maps come from published plate reconstructions, so the coastlines at each age follow the science. Each moment is labelled as well constrained, modelled or speculative, so you can tell evidence from estimate.</p>
+
+        <div>
+          <h3>Things to try</h3>
+          <ul class="try">
+            <li><span>Press <b>Tour</b> for “The story of Earth” in 16 narrated stops, or “The human journey” in 12.</span></li>
+            <li><span>Open <b>My place</b>, pick Mumbai or any city, and follow it as its plate moves back through time.</span></li>
+            <li><span>Use <b>Compare</b> to put Pangaea and today side by side with a sliding divider.</span></li>
+            <li><span>Take a <b>Deep Dive</b> to the ground and walk, fly or swim among animals of that era.</span></li>
+          </ul>
+        </div>
+
+        <dl class="facts">
+          <div><dt>170</dt><dd>world maps: every 5 million years back to 540 million years ago, wider steps beyond</dd></div>
+          <div><dt>59</dt><dd>events on the timeline, from the Moon-forming impact to today</dd></div>
+          <div><dt>101</dt><dd>species with fact cards, from the Burgess Shale to the blue whale</dd></div>
+          <div><dt>28</dt><dd>guided tour stops across the two narrated tours</dd></div>
+        </dl>
+
+        <div class="scale">
+          <div class="bar" role="img" aria-label="Earth's four eons drawn to scale: Hadean 536 million years, Archean 1,531, Proterozoic 1,961, Phanerozoic 539.">
+            <span style="flex: 536 1 0; background: #A83A94"></span>
+            <span style="flex: 1531 1 0; background: #F0047F"></span>
+            <span style="flex: 1961.2 1 0; background: #F73563"></span>
+            <span style="flex: 538.8 1 0; background: #9AD9DD"></span>
+          </div>
+          <ul class="legend">
+            <li><i style="background: #A83A94"></i><span>Hadean</span><span class="n">4,567–4,031 Ma</span></li>
+            <li><i style="background: #F0047F"></i><span>Archean</span><span class="n">4,031–2,500 Ma</span></li>
+            <li><i style="background: #F73563"></i><span>Proterozoic</span><span class="n">2,500–539 Ma</span></li>
+            <li><i style="background: #9AD9DD"></i><span>Phanerozoic</span><span class="n">539 Ma–today</span></li>
+          </ul>
+          <p>Earth’s eons to scale, in the official chart colours the app uses. 95 of the app’s 101 species first appear in the last one.</p>
+        </div>
+
+        <div class="meta">
+          <p><b>Data:</b> PALEOMAP maps and plate model (Scotese), Paleobiology Database, NASA Blue Marble and Black Marble, NOAA ETOPO1, International Chronostratigraphic Chart. Full credits are inside the app.</p>
+          <p><b>Built with:</b> JavaScript modules, three.js and custom WebGL2 shaders for the atmosphere, ocean and terrain.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="exhibit flip" id="anatomy" aria-labelledby="anatomy-title">
+    <div class="wrap ex-grid">
+      <div class="plates">
+        <figure>
+          <a class="plate" data-app href="anatomy-explorer/" target="_blank" rel="noopener" aria-label="Open Anatomy Explorer">
+            <img src="assets/anatomy-muscles.webp" width="1440" height="900" loading="lazy" alt="Anatomy Explorer with the skin and fat peeled away, showing the superficial muscles of a full human body, with depth and body-system controls on the left.">
+            <span class="go">Open the body ↗</span>
+          </a>
+          <figcaption><b>Superficial muscles.</b> Skin and fat are peeled away. The depth panel on the left turns each layer on or off.</figcaption>
+        </figure>
+        <figure class="second">
+          <a class="plate" data-app href="anatomy-explorer/" target="_blank" rel="noopener" aria-label="Open Anatomy Explorer" tabindex="-1">
+            <img src="assets/anatomy-colon.webp" width="1440" height="900" loading="lazy" alt="The organs layer with the transverse colon selected and an information panel describing it.">
+          </a>
+          <figcaption><b>Organs, one selected.</b> Click any part to name it and read a short description, then isolate, hide or X-ray around it.</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+        <p class="label">3,293 structures · 11 body systems</p>
+        <h2 id="anatomy-title">Anatomy Explorer</h2>
+        <p class="tagline">A 3D human body you can take apart. Peel it layer by layer, pull regions apart, and find any structure by its medical name or the everyday word for it.</p>
+        <div class="actions">
+          <a class="btn" data-app href="anatomy-explorer/" target="_blank" rel="noopener">Open Anatomy Explorer
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+          <span class="req">Touch, or mouse and keyboard</span>
+        </div>
+        </div>
+        <div class="card-body">
+        <p class="body">Every body region comes in two levels of detail, so a light version appears first and sharper meshes follow. The same controls work with touch on a phone or tablet.</p>
+
+        <div>
+          <h3>Things to try</h3>
+          <ul class="try">
+            <li><span>Press <kbd>1</kbd> to <kbd>6</kbd>, or use the Depth panel, to peel from skin down to organs.</span></li>
+            <li><span>Turn on <b>Decouple</b> and pinch or scroll over a region to pull its layers apart.</span></li>
+            <li><span>Search with everyday words like “kneecap”, “six pack” or “funny bone”.</span></li>
+            <li><span>Switch the body type to female, child, elderly, athletic or higher body fat.</span></li>
+          </ul>
+        </div>
+
+        <dl class="facts">
+          <div><dt>3,293</dt><dd>structures you can select and read about</dd></div>
+          <div><dt>11</dt><dd>body systems to show or hide, from skeletal to endocrine</dd></div>
+          <div><dt>6</dt><dd>depth layers, from skin to organs</dd></div>
+          <div><dt>6</dt><dd>body types, reshaped from one reference body</dd></div>
+        </dl>
+
+        <div class="scale">
+          <div class="bar" role="img" aria-label="Structures per depth layer: skin 256, subcutaneous fat 459, superficial muscles 270, deep muscles 576, skeleton 630, organs 1,102.">
+            <span style="flex: 256 1 0; background: #C9977C"></span>
+            <span style="flex: 459 1 0; background: #E9C98A"></span>
+            <span style="flex: 270 1 0; background: #B5473A"></span>
+            <span style="flex: 576 1 0; background: #8E2F28"></span>
+            <span style="flex: 630 1 0; background: #E6DCC8"></span>
+            <span style="flex: 1102 1 0; background: #A25A7C"></span>
+          </div>
+          <ul class="legend">
+            <li><i style="background: #C9977C"></i><span>Skin</span><span class="n">256</span></li>
+            <li><i style="background: #E9C98A"></i><span>Subcutaneous fat</span><span class="n">459</span></li>
+            <li><i style="background: #B5473A"></i><span>Superficial muscles</span><span class="n">270</span></li>
+            <li><i style="background: #8E2F28"></i><span>Deep muscles</span><span class="n">576</span></li>
+            <li><i style="background: #E6DCC8"></i><span>Skeleton</span><span class="n">630</span></li>
+            <li><i style="background: #A25A7C"></i><span>Organs</span><span class="n">1,102</span></li>
+          </ul>
+          <p>Parts per depth layer, in the colours the app uses for each layer.</p>
+        </div>
+
+        <div class="meta">
+          <p><b>Models:</b> Z-Anatomy (CC BY-SA 4.0), partly derived from BodyParts3D; body shapes measured from MakeHuman. For learning only, not for medical use.</p>
+          <p><b>Built with:</b> React, React Three Fiber, three.js and Zustand, with meshes compressed by meshoptimizer.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>How these were made</h2>
+      <p>Both apps were built in conversations with Claude, Anthropic’s AI model, in October 2026. Each one is a static site of HTML, JavaScript and WebGL, hosted free on GitHub Pages, so anyone with the link can open it.</p>
+    </div>
+    <ul>
+      <li><span class="label">Links</span></li>
+      <li><a data-app href="earth-through-time/" target="_blank" rel="noopener">Earth Through Time ↗</a></li>
+      <li><a data-app href="anatomy-explorer/" target="_blank" rel="noopener">Anatomy Explorer ↗</a></li>
+      <li><a href="https://github.com/shankar81/claude-builds" target="_blank" rel="noopener">Source and data credits on GitHub ↗</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+// Outside the hosted site (for example a preview copy), point the app links at the live site.
+(function () {
+  var h = location.hostname;
+  if (/github\.io$/.test(h) || h === 'localhost' || h === '127.0.0.1' || location.protocol === 'file:') return;
+  document.querySelectorAll('a[data-app]').forEach(function (a) {
+    a.href = 'https://shankar81.github.io/claude-builds/' + a.getAttribute('href');
+  });
+})();
+</script>
+</body>
+</html>

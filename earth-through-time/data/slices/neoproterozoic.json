@@ -1,0 +1,209 @@
+{
+ "source": "Reconstructed coastlines: PALEOMAP (Scotese 2016) 550–750 Ma; MERDITH2021 (Merdith et al. 2021) 760–1000 Ma; via GPlates Web Service. Elevation synthesised.",
+ "slices": [
+  {
+   "ageMa": 550,
+   "file": "neo-0550.png",
+   "model": "PALEOMAP",
+   "land": 0.258
+  },
+  {
+   "ageMa": 560,
+   "file": "neo-0560.png",
+   "model": "PALEOMAP",
+   "land": 0.258
+  },
+  {
+   "ageMa": 570,
+   "file": "neo-0570.png",
+   "model": "PALEOMAP",
+   "land": 0.257
+  },
+  {
+   "ageMa": 580,
+   "file": "neo-0580.png",
+   "model": "PALEOMAP",
+   "land": 0.257
+  },
+  {
+   "ageMa": 590,
+   "file": "neo-0590.png",
+   "model": "PALEOMAP",
+   "land": 0.256
+  },
+  {
+   "ageMa": 600,
+   "file": "neo-0600.png",
+   "model": "PALEOMAP",
+   "land": 0.256
+  },
+  {
+   "ageMa": 610,
+   "file": "neo-0610.png",
+   "model": "PALEOMAP",
+   "land": 0.148
+  },
+  {
+   "ageMa": 620,
+   "file": "neo-0620.png",
+   "model": "PALEOMAP",
+   "land": 0.148
+  },
+  {
+   "ageMa": 630,
+   "file": "neo-0630.png",
+   "model": "PALEOMAP",
+   "land": 0.149
+  },
+  {
+   "ageMa": 640,
+   "file": "neo-0640.png",
+   "model": "PALEOMAP",
+   "land": 0.149
+  },
+  {
+   "ageMa": 650,
+   "file": "neo-0650.png",
+   "model": "PALEOMAP",
+   "land": 0.149
+  },
+  {
+   "ageMa": 660,
+   "file": "neo-0660.png",
+   "model": "PALEOMAP",
+   "land": 0.149
+  },
+  {
+   "ageMa": 670,
+   "file": "neo-0670.png",
+   "model": "PALEOMAP",
+   "land": 0.149
+  },
+  {
+   "ageMa": 680,
+   "file": "neo-0680.png",
+   "model": "PALEOMAP",
+   "land": 0.15
+  },
+  {
+   "ageMa": 690,
+   "file": "neo-0690.png",
+   "model": "PALEOMAP",
+   "land": 0.15
+  },
+  {
+   "ageMa": 700,
+   "file": "neo-0700.png",
+   "model": "PALEOMAP",
+   "land": 0.15
+  },
+  {
+   "ageMa": 710,
+   "file": "neo-0710.png",
+   "model": "PALEOMAP",
+   "land": 0.15
+  },
+  {
+   "ageMa": 720,
+   "file": "neo-0720.png",
+   "model": "PALEOMAP",
+   "land": 0.15
+  },
+  {
+   "ageMa": 730,
+   "file": "neo-0730.png",
+   "model": "PALEOMAP",
+   "land": 0.151
+  },
+  {
+   "ageMa": 740,
+   "file": "neo-0740.png",
+   "model": "PALEOMAP",
+   "land": 0.151
+  },
+  {
+   "ageMa": 750,
+   "file": "neo-0750.png",
+   "model": "PALEOMAP",
+   "land": 0.149
+  },
+  {
+   "ageMa": 760,
+   "file": "neo-0760.png",
+   "model": "MERDITH2021",
+   "land": 0.168
+  },
+  {
+   "ageMa": 780,
+   "file": "neo-0780.png",
+   "model": "MERDITH2021",
+   "land": 0.168
+  },
+  {
+   "ageMa": 800,
+   "file": "neo-0800.png",
+   "model": "MERDITH2021",
+   "land": 0.169
+  },
+  {
+   "ageMa": 820,
+   "file": "neo-0820.png",
+   "model": "MERDITH2021",
+   "land": 0.169
+  },
+  {
+   "ageMa": 840,
+   "file": "neo-0840.png",
+   "model": "MERDITH2021",
+   "land": 0.167
+  },
+  {
+   "ageMa": 860,
+   "file": "neo-0860.png",
+   "model": "MERDITH2021",
+   "land": 0.163
+  },
+  {
+   "ageMa": 880,
+   "file": "neo-0880.png",
+   "model": "MERDITH2021",
+   "land": 0.163
+  },
+  {
+   "ageMa": 900,
+   "file": "neo-0900.png",
+   "model": "MERDITH2021",
+   "land": 0.162
+  },
+  {
+   "ageMa": 920,
+   "file": "neo-0920.png",
+   "model": "MERDITH2021",
+   "land": 0.164
+  },
+  {
+   "ageMa": 940,
+   "file": "neo-0940.png",
+   "model": "MERDITH2021",
+   "land": 0.163
+  },
+  {
+   "ageMa": 960,
+   "file": "neo-0960.png",
+   "model": "MERDITH2021",
+   "land": 0.163
+  },
+  {
+   "ageMa": 980,
+   "file": "neo-0980.png",
+   "model": "MERDITH2021",
+   "land": 0.163
+  },
+  {
+   "ageMa": 1000,
+   "file": "neo-1000.png",
+   "model": "MERDITH2021",
+   "land": 0.163
+  }
+ ]
+}

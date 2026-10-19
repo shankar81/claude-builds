@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0b0d10"/>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#2a3038" stroke-width="10"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- figure: half skin, half muscle (left/right) -->
+    <path d="M256 92c22 0 38 18 38 40s-16 42-38 42-38-20-38-42 16-40 38-40z" fill="#c4876b"/>
+    <path d="M256 186c-52 0-82 14-90 46l-16 92c-2 12 18 16 22 4l20-74 6 64-10 118c-1 14 22 16 24 2l20-108h24z" fill="#c4876b"/>
+    <path d="M256 186c52 0 82 14 90 46l16 92c2 12-18 16-22 4l-20-74-6 64 10 118c1 14-22 16-24 2l-20-108h-24z" fill="#9b2c25"/>
+    <path d="M256 196v120" stroke="#e2d6bf" stroke-width="7"/>
+    <path d="M262 214c18 0 32 6 40 16M262 236c16 0 28 5 34 13M262 258c14 0 24 4 30 10" stroke="#e2d6bf" stroke-width="5" opacity=".9"/>
+  </g>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#f2a541" stroke-width="10" stroke-dasharray="90 1142" stroke-dashoffset="-40"/>
+</svg>

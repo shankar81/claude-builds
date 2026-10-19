@@ -1,0 +1,83 @@
+{
+ "source": "Procedural illustration (no consensus reconstruction exists before ~1 Ga); land fractions and supercontinent phases follow the literature cited in pipeline/build-speculative.mjs",
+ "slices": [
+  {
+   "ageMa": 1100,
+   "file": "spec-1100.png",
+   "label": "Proto-Rodinia continents (illustrative)",
+   "land": 0.233
+  },
+  {
+   "ageMa": 1300,
+   "file": "spec-1300.png",
+   "label": "Dispersed continents (illustrative)",
+   "land": 0.258
+  },
+  {
+   "ageMa": 1500,
+   "file": "spec-1500.png",
+   "label": "Columbia (Nuna) breaking up (illustrative)",
+   "land": 0.231
+  },
+  {
+   "ageMa": 1750,
+   "file": "spec-1750.png",
+   "label": "Columbia (Nuna) supercontinent (illustrative)",
+   "land": 0.226
+  },
+  {
+   "ageMa": 1950,
+   "file": "spec-1950.png",
+   "label": "Continents assembling into Columbia (illustrative)",
+   "land": 0.205
+  },
+  {
+   "ageMa": 2200,
+   "file": "spec-2200.png",
+   "label": "Dispersed cratons (illustrative)",
+   "land": 0.167
+  },
+  {
+   "ageMa": 2450,
+   "file": "spec-2450.png",
+   "label": "Kenorland breaking up (illustrative)",
+   "land": 0.155
+  },
+  {
+   "ageMa": 2700,
+   "file": "spec-2700.png",
+   "label": "Kenorland / Superia supercraton (illustrative)",
+   "land": 0.122
+  },
+  {
+   "ageMa": 3000,
+   "file": "spec-3000.png",
+   "label": "Ur and early cratons (illustrative)",
+   "land": 0.087
+  },
+  {
+   "ageMa": 3300,
+   "file": "spec-3300.png",
+   "label": "Vaalbara (Kaapvaal + Pilbara) (illustrative)",
+   "land": 0.055
+  },
+  {
+   "ageMa": 3600,
+   "file": "spec-3600.png",
+   "label": "Small protocontinents (illustrative)",
+   "land": 0.034
+  },
+  {
+   "ageMa": 4000,
+   "file": "spec-4000.png",
+   "label": "Volcanic islands on a water world (illustrative)",
+   "land": 0.021
+  },
+  {
+   "ageMa": 4400,
+   "file": "spec-4400.png",
+   "label": "First crust and islands (illustrative)",
+   "land": 0.013
+  }
+ ]
+}

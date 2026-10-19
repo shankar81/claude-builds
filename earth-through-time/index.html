@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Earth Through Time</title>
+  <meta name="description" content="Scrub through 4.5 billion years of Earth history on an interactive 3D globe, then dive to the ground.">
+  <meta name="theme-color" content="#05070d">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/hud.css">
+  <link rel="stylesheet" href="css/compare.css">
+  <link rel="stylesheet" href="css/tour.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/panels.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <style>:root { color-scheme: dark; background: #05070d; }</style>
+</head>
+<body>
+  <div id="app">
+    <canvas id="view" aria-label="3D view of Earth" tabindex="0"></canvas>
+
+    <div id="hud" class="hud" aria-live="polite"></div>
+    <nav id="toolbar" class="toolbar" aria-label="Tools"></nav>
+    <aside id="side-panel" class="side-panel" aria-label="Details" hidden></aside>
+    <section id="timeline" class="timeline" aria-label="Timeline"></section>
+    <div id="cards" class="cards"></div>
+    <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+    <div id="loading" class="loading" role="progressbar" aria-label="Loading">
+      <div class="loading-inner">
+        <div class="loading-title">Earth Through Time</div>
+        <div class="loading-bar"><span id="loading-fill"></span></div>
+        <div class="loading-text" id="loading-text">Starting…</div>
+      </div>
+    </div>
+
+    <noscript><p class="fatal">This app needs JavaScript and WebGL2.</p></noscript>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

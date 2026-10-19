@@ -1,0 +1,768 @@
+{
+ "source": "Scotese & Wright (2018) PALEOMAP PaleoDEMs, doi:10.5281/zenodo.5460860, CC BY 4.0",
+ "slices": [
+  {
+   "ageMa": 0,
+   "file": "paleodem-0000.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 01",
+   "land": 0.285
+  },
+  {
+   "ageMa": 5,
+   "file": "paleodem-0005.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 03",
+   "land": 0.296
+  },
+  {
+   "ageMa": 10,
+   "file": "paleodem-0010.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 05",
+   "land": 0.305
+  },
+  {
+   "ageMa": 15,
+   "file": "paleodem-0015.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 06",
+   "land": 0.307
+  },
+  {
+   "ageMa": 20,
+   "file": "paleodem-0020.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 07",
+   "land": 0.309
+  },
+  {
+   "ageMa": 25,
+   "file": "paleodem-0025.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 08",
+   "land": 0.314
+  },
+  {
+   "ageMa": 30,
+   "file": "paleodem-0030.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 09",
+   "land": 0.314
+  },
+  {
+   "ageMa": 35,
+   "file": "paleodem-0035.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 10",
+   "land": 0.317
+  },
+  {
+   "ageMa": 40,
+   "file": "paleodem-0040.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 11",
+   "land": 0.323
+  },
+  {
+   "ageMa": 45,
+   "file": "paleodem-0045.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 12",
+   "land": 0.3
+  },
+  {
+   "ageMa": 50,
+   "file": "paleodem-0050.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 13",
+   "land": 0.277
+  },
+  {
+   "ageMa": 55,
+   "file": "paleodem-0055.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 14",
+   "land": 0.283
+  },
+  {
+   "ageMa": 60,
+   "file": "paleodem-0060.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 15",
+   "land": 0.288
+  },
+  {
+   "ageMa": 65,
+   "file": "paleodem-0065.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 16",
+   "land": 0.292
+  },
+  {
+   "ageMa": 70,
+   "file": "paleodem-0070.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 17",
+   "land": 0.298
+  },
+  {
+   "ageMa": 75,
+   "file": "paleodem-0075.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 18",
+   "land": 0.251
+  },
+  {
+   "ageMa": 80,
+   "file": "paleodem-0080.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 19",
+   "land": 0.225
+  },
+  {
+   "ageMa": 85,
+   "file": "paleodem-0085.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 20",
+   "land": 0.237
+  },
+  {
+   "ageMa": 90,
+   "file": "paleodem-0090.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 21",
+   "land": 0.251
+  },
+  {
+   "ageMa": 95,
+   "file": "paleodem-0095.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 22",
+   "land": 0.264
+  },
+  {
+   "ageMa": 100,
+   "file": "paleodem-0100.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 23",
+   "land": 0.273
+  },
+  {
+   "ageMa": 105,
+   "file": "paleodem-0105.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 24",
+   "land": 0.277
+  },
+  {
+   "ageMa": 110,
+   "file": "paleodem-0110.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 25",
+   "land": 0.279
+  },
+  {
+   "ageMa": 115,
+   "file": "paleodem-0115.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 26",
+   "land": 0.276
+  },
+  {
+   "ageMa": 120,
+   "file": "paleodem-0120.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 27",
+   "land": 0.269
+  },
+  {
+   "ageMa": 125,
+   "file": "paleodem-0125.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 28",
+   "land": 0.28
+  },
+  {
+   "ageMa": 130,
+   "file": "paleodem-0130.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 29",
+   "land": 0.301
+  },
+  {
+   "ageMa": 135,
+   "file": "paleodem-0135.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 30",
+   "land": 0.309
+  },
+  {
+   "ageMa": 140,
+   "file": "paleodem-0140.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 31",
+   "land": 0.321
+  },
+  {
+   "ageMa": 145,
+   "file": "paleodem-0145.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 32",
+   "land": 0.319
+  },
+  {
+   "ageMa": 150,
+   "file": "paleodem-0150.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 33",
+   "land": 0.318
+  },
+  {
+   "ageMa": 155,
+   "file": "paleodem-0155.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 34",
+   "land": 0.31
+  },
+  {
+   "ageMa": 160,
+   "file": "paleodem-0160.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 35",
+   "land": 0.291
+  },
+  {
+   "ageMa": 165,
+   "file": "paleodem-0165.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 36",
+   "land": 0.296
+  },
+  {
+   "ageMa": 170,
+   "file": "paleodem-0170.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 37",
+   "land": 0.306
+  },
+  {
+   "ageMa": 175,
+   "file": "paleodem-0175.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 38",
+   "land": 0.318
+  },
+  {
+   "ageMa": 180,
+   "file": "paleodem-0180.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 39",
+   "land": 0.345
+  },
+  {
+   "ageMa": 185,
+   "file": "paleodem-0185.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 40",
+   "land": 0.332
+  },
+  {
+   "ageMa": 190,
+   "file": "paleodem-0190.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 41",
+   "land": 0.33
+  },
+  {
+   "ageMa": 195,
+   "file": "paleodem-0195.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 42",
+   "land": 0.335
+  },
+  {
+   "ageMa": 200,
+   "file": "paleodem-0200.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 43",
+   "land": 0.351
+  },
+  {
+   "ageMa": 205,
+   "file": "paleodem-0205.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 43.5",
+   "land": 0.347
+  },
+  {
+   "ageMa": 210,
+   "file": "paleodem-0210.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 44",
+   "land": 0.343
+  },
+  {
+   "ageMa": 215,
+   "file": "paleodem-0215.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 44.5",
+   "land": 0.342
+  },
+  {
+   "ageMa": 220,
+   "file": "paleodem-0220.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 45",
+   "land": 0.326
+  },
+  {
+   "ageMa": 225,
+   "file": "paleodem-0225.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 45.5",
+   "land": 0.322
+  },
+  {
+   "ageMa": 230,
+   "file": "paleodem-0230.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 46",
+   "land": 0.346
+  },
+  {
+   "ageMa": 235,
+   "file": "paleodem-0235.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 46.5",
+   "land": 0.351
+  },
+  {
+   "ageMa": 240,
+   "file": "paleodem-0240.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 47",
+   "land": 0.361
+  },
+  {
+   "ageMa": 245,
+   "file": "paleodem-0245.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 48",
+   "land": 0.344
+  },
+  {
+   "ageMa": 250,
+   "file": "paleodem-0250.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 49",
+   "land": 0.296
+  },
+  {
+   "ageMa": 255,
+   "file": "paleodem-0255.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 50",
+   "land": 0.28
+  },
+  {
+   "ageMa": 260,
+   "file": "paleodem-0260.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 51",
+   "land": 0.26
+  },
+  {
+   "ageMa": 265,
+   "file": "paleodem-0265.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 51.5",
+   "land": 0.261
+  },
+  {
+   "ageMa": 270,
+   "file": "paleodem-0270.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 52",
+   "land": 0.26
+  },
+  {
+   "ageMa": 275,
+   "file": "paleodem-0275.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 53",
+   "land": 0.254
+  },
+  {
+   "ageMa": 280,
+   "file": "paleodem-0280.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 53.5",
+   "land": 0.244
+  },
+  {
+   "ageMa": 285,
+   "file": "paleodem-0285.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 54",
+   "land": 0.24
+  },
+  {
+   "ageMa": 290,
+   "file": "paleodem-0290.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 55",
+   "land": 0.24
+  },
+  {
+   "ageMa": 295,
+   "file": "paleodem-0295.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 56",
+   "land": 0.232
+  },
+  {
+   "ageMa": 300,
+   "file": "paleodem-0300.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 57",
+   "land": 0.222
+  },
+  {
+   "ageMa": 305,
+   "file": "paleodem-0305.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 58",
+   "land": 0.23
+  },
+  {
+   "ageMa": 310,
+   "file": "paleodem-0310.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 59",
+   "land": 0.237
+  },
+  {
+   "ageMa": 315,
+   "file": "paleodem-0315.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 59.5",
+   "land": 0.244
+  },
+  {
+   "ageMa": 320,
+   "file": "paleodem-0320.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 60",
+   "land": 0.248
+  },
+  {
+   "ageMa": 325,
+   "file": "paleodem-0325.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 61",
+   "land": 0.245
+  },
+  {
+   "ageMa": 330,
+   "file": "paleodem-0330.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 62",
+   "land": 0.236
+  },
+  {
+   "ageMa": 335,
+   "file": "paleodem-0335.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 62.5",
+   "land": 0.224
+  },
+  {
+   "ageMa": 340,
+   "file": "paleodem-0340.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 63",
+   "land": 0.215
+  },
+  {
+   "ageMa": 345,
+   "file": "paleodem-0345.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 63.5",
+   "land": 0.212
+  },
+  {
+   "ageMa": 350,
+   "file": "paleodem-0350.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 64",
+   "land": 0.211
+  },
+  {
+   "ageMa": 355,
+   "file": "paleodem-0355.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 64.5",
+   "land": 0.195
+  },
+  {
+   "ageMa": 360,
+   "file": "paleodem-0360.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 65",
+   "land": 0.184
+  },
+  {
+   "ageMa": 365,
+   "file": "paleodem-0365.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 65.5",
+   "land": 0.177
+  },
+  {
+   "ageMa": 370,
+   "file": "paleodem-0370.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 66",
+   "land": 0.171
+  },
+  {
+   "ageMa": 375,
+   "file": "paleodem-0375.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 66.5",
+   "land": 0.163
+  },
+  {
+   "ageMa": 380,
+   "file": "paleodem-0380.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 67",
+   "land": 0.155
+  },
+  {
+   "ageMa": 385,
+   "file": "paleodem-0385.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 67.5",
+   "land": 0.158
+  },
+  {
+   "ageMa": 390,
+   "file": "paleodem-0390.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 68",
+   "land": 0.168
+  },
+  {
+   "ageMa": 395,
+   "file": "paleodem-0395.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 69",
+   "land": 0.168
+  },
+  {
+   "ageMa": 400,
+   "file": "paleodem-0400.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 70",
+   "land": 0.164
+  },
+  {
+   "ageMa": 405,
+   "file": "paleodem-0405.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 70.5",
+   "land": 0.165
+  },
+  {
+   "ageMa": 410,
+   "file": "paleodem-0410.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 71",
+   "land": 0.166
+  },
+  {
+   "ageMa": 415,
+   "file": "paleodem-0415.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 72",
+   "land": 0.158
+  },
+  {
+   "ageMa": 420,
+   "file": "paleodem-0420.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 73",
+   "land": 0.155
+  },
+  {
+   "ageMa": 425,
+   "file": "paleodem-0425.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 74",
+   "land": 0.151
+  },
+  {
+   "ageMa": 430,
+   "file": "paleodem-0430.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 75",
+   "land": 0.145
+  },
+  {
+   "ageMa": 435,
+   "file": "paleodem-0435.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 75.5",
+   "land": 0.177
+  },
+  {
+   "ageMa": 440,
+   "file": "paleodem-0440.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 76",
+   "land": 0.184
+  },
+  {
+   "ageMa": 445,
+   "file": "paleodem-0445.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 77",
+   "land": 0.18
+  },
+  {
+   "ageMa": 450,
+   "file": "paleodem-0450.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 78",
+   "land": 0.176
+  },
+  {
+   "ageMa": 455,
+   "file": "paleodem-0455.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 79",
+   "land": 0.171
+  },
+  {
+   "ageMa": 460,
+   "file": "paleodem-0460.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 80",
+   "land": 0.169
+  },
+  {
+   "ageMa": 465,
+   "file": "paleodem-0465.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 80.5",
+   "land": 0.168
+  },
+  {
+   "ageMa": 470,
+   "file": "paleodem-0470.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 81",
+   "land": 0.164
+  },
+  {
+   "ageMa": 475,
+   "file": "paleodem-0475.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 81.5",
+   "land": 0.162
+  },
+  {
+   "ageMa": 480,
+   "file": "paleodem-0480.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 82",
+   "land": 0.164
+  },
+  {
+   "ageMa": 485,
+   "file": "paleodem-0485.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 82.5",
+   "land": 0.166
+  },
+  {
+   "ageMa": 490,
+   "file": "paleodem-0490.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 83",
+   "land": 0.169
+  },
+  {
+   "ageMa": 495,
+   "file": "paleodem-0495.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 83.5",
+   "land": 0.17
+  },
+  {
+   "ageMa": 500,
+   "file": "paleodem-0500.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 84",
+   "land": 0.171
+  },
+  {
+   "ageMa": 505,
+   "file": "paleodem-0505.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 84.1",
+   "land": 0.169
+  },
+  {
+   "ageMa": 510,
+   "file": "paleodem-0510.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 84.2",
+   "land": 0.17
+  },
+  {
+   "ageMa": 515,
+   "file": "paleodem-0515.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 85",
+   "land": 0.163
+  },
+  {
+   "ageMa": 520,
+   "file": "paleodem-0520.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 86",
+   "land": 0.157
+  },
+  {
+   "ageMa": 525,
+   "file": "paleodem-0525.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 86.5",
+   "land": 0.165
+  },
+  {
+   "ageMa": 530,
+   "file": "paleodem-0530.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 87",
+   "land": 0.174
+  },
+  {
+   "ageMa": 535,
+   "file": "paleodem-0535.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 87.5",
+   "land": 0.182
+  },
+  {
+   "ageMa": 540,
+   "file": "paleodem-0540.png",
+   "source": "paleomap-paleodem",
+   "map": "Map 88",
+   "land": 0.186
+  }
+ ]
+}

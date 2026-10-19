@@ -1,0 +1,75 @@
+{
+ "source": "Speculative: ETOPO1 relief moved along extrapolated PALEOMAP plate motions (10 Ma → present stage rotations)",
+ "slices": [
+  {
+   "ageMa": -5,
+   "file": "future-0005.png",
+   "land": 0.333
+  },
+  {
+   "ageMa": -10,
+   "file": "future-0010.png",
+   "land": 0.334
+  },
+  {
+   "ageMa": -20,
+   "file": "future-0020.png",
+   "land": 0.332
+  },
+  {
+   "ageMa": -30,
+   "file": "future-0030.png",
+   "land": 0.33
+  },
+  {
+   "ageMa": -40,
+   "file": "future-0040.png",
+   "land": 0.326
+  },
+  {
+   "ageMa": -50,
+   "file": "future-0050.png",
+   "land": 0.322
+  },
+  {
+   "ageMa": -75,
+   "file": "future-0075.png",
+   "land": 0.313
+  },
+  {
+   "ageMa": -100,
+   "file": "future-0100.png",
+   "land": 0.309
+  },
+  {
+   "ageMa": -125,
+   "file": "future-0125.png",
+   "land": 0.301
+  },
+  {
+   "ageMa": -150,
+   "file": "future-0150.png",
+   "land": 0.298
+  },
+  {
+   "ageMa": -175,
+   "file": "future-0175.png",
+   "land": 0.305
+  },
+  {
+   "ageMa": -200,
+   "file": "future-0200.png",
+   "land": 0.317
+  },
+  {
+   "ageMa": -225,
+   "file": "future-0225.png",
+   "land": 0.322
+  },
+  {
+   "ageMa": -250,
+   "file": "future-0250.png",
+   "land": 0.328
+  }
+ ]
+}

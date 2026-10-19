@@ -1,0 +1,1383 @@
+{
+ "source": "International Commission on Stratigraphy chart via the Paleobiology Database intervals API (scale 1)",
+ "url": "https://paleobiodb.org/data1.2/intervals/list.json?scale=1&limit=all&show=ref",
+ "retrieved": "2026-10-17",
+ "eon": [
+  {
+   "name": "Hadean",
+   "start": 4567,
+   "end": 4031,
+   "color": "#A83A94",
+   "parent": null,
+   "abbr": null
+  },
+  {
+   "name": "Archean",
+   "start": 4031,
+   "end": 2500,
+   "color": "#F0047F",
+   "parent": null,
+   "abbr": "Arc"
+  },
+  {
+   "name": "Proterozoic",
+   "start": 2500,
+   "end": 538.8,
+   "color": "#F73563",
+   "parent": null,
+   "abbr": "Ptz"
+  },
+  {
+   "name": "Phanerozoic",
+   "start": 538.8,
+   "end": 0,
+   "color": "#9AD9DD",
+   "parent": null,
+   "abbr": null
+  }
+ ],
+ "era": [
+  {
+   "name": "Eoarchean",
+   "start": 4031,
+   "end": 3600,
+   "color": "#DA037F",
+   "parent": "Archean",
+   "abbr": "Earc"
+  },
+  {
+   "name": "Paleoarchean",
+   "start": 3600,
+   "end": 3200,
+   "color": "#F444A9",
+   "parent": "Archean",
+   "abbr": "Parc"
+  },
+  {
+   "name": "Mesoarchean",
+   "start": 3200,
+   "end": 2800,
+   "color": "#F768A9",
+   "parent": "Archean",
+   "abbr": "Marc"
+  },
+  {
+   "name": "Neoarchean",
+   "start": 2800,
+   "end": 2500,
+   "color": "#F99BC1",
+   "parent": "Archean",
+   "abbr": "Narc"
+  },
+  {
+   "name": "Paleoproterozoic",
+   "start": 2500,
+   "end": 1600,
+   "color": "#F74370",
+   "parent": "Proterozoic",
+   "abbr": "Pptz"
+  },
+  {
+   "name": "Mesoproterozoic",
+   "start": 1600,
+   "end": 1000,
+   "color": "#FDB462",
+   "parent": "Proterozoic",
+   "abbr": "Mptz"
+  },
+  {
+   "name": "Neoproterozoic",
+   "start": 1000,
+   "end": 538.8,
+   "color": "#FEB342",
+   "parent": "Proterozoic",
+   "abbr": "Nptz"
+  },
+  {
+   "name": "Paleozoic",
+   "start": 538.8,
+   "end": 251.902,
+   "color": "#99C08D",
+   "parent": "Phanerozoic",
+   "abbr": "Pz"
+  },
+  {
+   "name": "Mesozoic",
+   "start": 251.902,
+   "end": 66,
+   "color": "#67C5CA",
+   "parent": "Phanerozoic",
+   "abbr": "Mz"
+  },
+  {
+   "name": "Cenozoic",
+   "start": 66,
+   "end": 0,
+   "color": "#F2F91D",
+   "parent": "Phanerozoic",
+   "abbr": "Cz"
+  }
+ ],
+ "period": [
+  {
+   "name": "Siderian",
+   "start": 2500,
+   "end": 2300,
+   "color": "#F74F7C",
+   "parent": "Paleoproterozoic",
+   "abbr": "Sd"
+  },
+  {
+   "name": "Rhyacian",
+   "start": 2300,
+   "end": 2050,
+   "color": "#F75B89",
+   "parent": "Paleoproterozoic",
+   "abbr": "R"
+  },
+  {
+   "name": "Orosirian",
+   "start": 2050,
+   "end": 1800,
+   "color": "#F76898",
+   "parent": "Paleoproterozoic",
+   "abbr": "Or"
+  },
+  {
+   "name": "Statherian",
+   "start": 1800,
+   "end": 1600,
+   "color": "#F875A7",
+   "parent": "Paleoproterozoic",
+   "abbr": "St"
+  },
+  {
+   "name": "Calymmian",
+   "start": 1600,
+   "end": 1400,
+   "color": "#FDC07A",
+   "parent": "Mesoproterozoic",
+   "abbr": "Ca"
+  },
+  {
+   "name": "Ectasian",
+   "start": 1400,
+   "end": 1200,
+   "color": "#F3CC8A",
+   "parent": "Mesoproterozoic",
+   "abbr": "Ec"
+  },
+  {
+   "name": "Stenian",
+   "start": 1200,
+   "end": 1000,
+   "color": "#FED99A",
+   "parent": "Mesoproterozoic",
+   "abbr": "St"
+  },
+  {
+   "name": "Tonian",
+   "start": 1000,
+   "end": 720,
+   "color": "#FEBF4E",
+   "parent": "Neoproterozoic",
+   "abbr": "T"
+  },
+  {
+   "name": "Cryogenian",
+   "start": 720,
+   "end": 635,
+   "color": "#FECC5C",
+   "parent": "Neoproterozoic",
+   "abbr": "Cr"
+  },
+  {
+   "name": "Ediacaran",
+   "start": 635,
+   "end": 538.8,
+   "color": "#FED96A",
+   "parent": "Neoproterozoic",
+   "abbr": "E"
+  },
+  {
+   "name": "Cambrian",
+   "start": 538.8,
+   "end": 486.85,
+   "color": "#7FA056",
+   "parent": "Paleozoic",
+   "abbr": "Cm"
+  },
+  {
+   "name": "Ordovician",
+   "start": 486.85,
+   "end": 443.1,
+   "color": "#009270",
+   "parent": "Paleozoic",
+   "abbr": "O"
+  },
+  {
+   "name": "Silurian",
+   "start": 443.1,
+   "end": 419.62,
+   "color": "#B3E1B6",
+   "parent": "Paleozoic",
+   "abbr": "S"
+  },
+  {
+   "name": "Devonian",
+   "start": 419.62,
+   "end": 358.86,
+   "color": "#CB8C37",
+   "parent": "Paleozoic",
+   "abbr": "D"
+  },
+  {
+   "name": "Carboniferous",
+   "start": 358.86,
+   "end": 298.9,
+   "color": "#67A599",
+   "parent": "Paleozoic",
+   "abbr": "C"
+  },
+  {
+   "name": "Permian",
+   "start": 298.9,
+   "end": 251.902,
+   "color": "#F04028",
+   "parent": "Paleozoic",
+   "abbr": "P"
+  },
+  {
+   "name": "Triassic",
+   "start": 251.902,
+   "end": 201.4,
+   "color": "#812B92",
+   "parent": "Mesozoic",
+   "abbr": "Tr"
+  },
+  {
+   "name": "Jurassic",
+   "start": 201.4,
+   "end": 143.1,
+   "color": "#34B2C9",
+   "parent": "Mesozoic",
+   "abbr": "J"
+  },
+  {
+   "name": "Cretaceous",
+   "start": 143.1,
+   "end": 66,
+   "color": "#7FC64E",
+   "parent": "Mesozoic",
+   "abbr": "K"
+  },
+  {
+   "name": "Paleogene",
+   "start": 66,
+   "end": 23.04,
+   "color": "#FD9A52",
+   "parent": "Cenozoic",
+   "abbr": "Pg"
+  },
+  {
+   "name": "Neogene",
+   "start": 23.04,
+   "end": 2.58,
+   "color": "#FFE619",
+   "parent": "Cenozoic",
+   "abbr": "Ng"
+  },
+  {
+   "name": "Quaternary",
+   "start": 2.58,
+   "end": 0,
+   "color": "#F9F97F",
+   "parent": "Cenozoic",
+   "abbr": "Q"
+  }
+ ],
+ "epoch": [
+  {
+   "name": "Terreneuvian",
+   "start": 538.8,
+   "end": 521,
+   "color": "#8CB06C",
+   "parent": "Cambrian",
+   "abbr": null
+  },
+  {
+   "name": "Series 2",
+   "start": 521,
+   "end": 506.5,
+   "color": "#99C078",
+   "parent": "Cambrian",
+   "abbr": null
+  },
+  {
+   "name": "Miaolingian",
+   "start": 506.5,
+   "end": 497,
+   "color": "#A6CF86",
+   "parent": "Cambrian",
+   "abbr": null
+  },
+  {
+   "name": "Furongian",
+   "start": 497,
+   "end": 486.85,
+   "color": "#B3E095",
+   "parent": "Cambrian",
+   "abbr": null
+  },
+  {
+   "name": "Early Ordovician",
+   "start": 486.85,
+   "end": 471.3,
+   "color": "#1A9D6F",
+   "parent": "Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Middle Ordovician",
+   "start": 471.3,
+   "end": 458.2,
+   "color": "#4DB47E",
+   "parent": "Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Late Ordovician",
+   "start": 458.2,
+   "end": 443.1,
+   "color": "#7FCA93",
+   "parent": "Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Llandovery",
+   "start": 443.1,
+   "end": 432.9,
+   "color": "#99D7B3",
+   "parent": "Silurian",
+   "abbr": null
+  },
+  {
+   "name": "Wenlock",
+   "start": 432.9,
+   "end": 426.7,
+   "color": "#B3E1C2",
+   "parent": "Silurian",
+   "abbr": null
+  },
+  {
+   "name": "Ludlow",
+   "start": 426.7,
+   "end": 422.7,
+   "color": "#BFE6CF",
+   "parent": "Silurian",
+   "abbr": null
+  },
+  {
+   "name": "Pridoli",
+   "start": 422.7,
+   "end": 419.62,
+   "color": "#E6F5E1",
+   "parent": "Silurian",
+   "abbr": null
+  },
+  {
+   "name": "Early Devonian",
+   "start": 419.62,
+   "end": 393.47,
+   "color": "#E5AC4D",
+   "parent": "Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Middle Devonian",
+   "start": 393.47,
+   "end": 382.31,
+   "color": "#F1C868",
+   "parent": "Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Late Devonian",
+   "start": 382.31,
+   "end": 358.86,
+   "color": "#F1E19D",
+   "parent": "Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Mississippian",
+   "start": 358.86,
+   "end": 323.4,
+   "color": "#678F66",
+   "parent": "Carboniferous",
+   "abbr": null
+  },
+  {
+   "name": "Pennsylvanian",
+   "start": 323.4,
+   "end": 298.9,
+   "color": "#99C2B5",
+   "parent": "Carboniferous",
+   "abbr": null
+  },
+  {
+   "name": "Cisuralian",
+   "start": 298.9,
+   "end": 274.4,
+   "color": "#EF5845",
+   "parent": "Permian",
+   "abbr": null
+  },
+  {
+   "name": "Guadalupian",
+   "start": 274.4,
+   "end": 259.857,
+   "color": "#FB745C",
+   "parent": "Permian",
+   "abbr": null
+  },
+  {
+   "name": "Lopingian",
+   "start": 259.857,
+   "end": 251.902,
+   "color": "#FBA794",
+   "parent": "Permian",
+   "abbr": null
+  },
+  {
+   "name": "Early Triassic",
+   "start": 251.902,
+   "end": 247,
+   "color": "#983999",
+   "parent": "Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Middle Triassic",
+   "start": 247,
+   "end": 237,
+   "color": "#B168B1",
+   "parent": "Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Late Triassic",
+   "start": 237,
+   "end": 201.4,
+   "color": "#BD8CC3",
+   "parent": "Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Early Jurassic",
+   "start": 201.4,
+   "end": 174.7,
+   "color": "#42AED0",
+   "parent": "Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Middle Jurassic",
+   "start": 174.7,
+   "end": 161.5,
+   "color": "#80CFD8",
+   "parent": "Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Late Jurassic",
+   "start": 161.5,
+   "end": 143.1,
+   "color": "#B3E3EE",
+   "parent": "Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Early Cretaceous",
+   "start": 143.1,
+   "end": 100.5,
+   "color": "#8CCD57",
+   "parent": "Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Late Cretaceous",
+   "start": 100.5,
+   "end": 66,
+   "color": "#A6D84A",
+   "parent": "Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Paleocene",
+   "start": 66,
+   "end": 56,
+   "color": "#FDA75F",
+   "parent": "Paleogene",
+   "abbr": "Pal"
+  },
+  {
+   "name": "Eocene",
+   "start": 56,
+   "end": 33.9,
+   "color": "#FDB46C",
+   "parent": "Paleogene",
+   "abbr": "Eo"
+  },
+  {
+   "name": "Oligocene",
+   "start": 33.9,
+   "end": 23.04,
+   "color": "#FDC07A",
+   "parent": "Paleogene",
+   "abbr": "Ol"
+  },
+  {
+   "name": "Miocene",
+   "start": 23.04,
+   "end": 5.333,
+   "color": "#FFFF00",
+   "parent": "Neogene",
+   "abbr": "Mio"
+  },
+  {
+   "name": "Pliocene",
+   "start": 5.333,
+   "end": 2.58,
+   "color": "#FFFF99",
+   "parent": "Neogene",
+   "abbr": "Pli"
+  },
+  {
+   "name": "Pleistocene",
+   "start": 2.58,
+   "end": 0.0117,
+   "color": "#FFF2AE",
+   "parent": "Quaternary",
+   "abbr": "Ple"
+  },
+  {
+   "name": "Holocene",
+   "start": 0.0117,
+   "end": 0,
+   "color": "#FEF2E0",
+   "parent": "Quaternary",
+   "abbr": null
+  }
+ ],
+ "age": [
+  {
+   "name": "Fortunian",
+   "start": 538.8,
+   "end": 529,
+   "color": "#99B575",
+   "parent": "Terreneuvian",
+   "abbr": null
+  },
+  {
+   "name": "Stage 2",
+   "start": 529,
+   "end": 521,
+   "color": "#A6BA80",
+   "parent": "Terreneuvian",
+   "abbr": null
+  },
+  {
+   "name": "Stage 3",
+   "start": 521,
+   "end": 514.5,
+   "color": "#A6C583",
+   "parent": "Series 2",
+   "abbr": null
+  },
+  {
+   "name": "Stage 4",
+   "start": 514.5,
+   "end": 506.5,
+   "color": "#B3CA8E",
+   "parent": "Series 2",
+   "abbr": null
+  },
+  {
+   "name": "Wuliuan",
+   "start": 506.5,
+   "end": 504.5,
+   "color": "#B3D492",
+   "parent": "Miaolingian",
+   "abbr": null
+  },
+  {
+   "name": "Drumian",
+   "start": 504.5,
+   "end": 500.5,
+   "color": "#BFD99D",
+   "parent": "Miaolingian",
+   "abbr": null
+  },
+  {
+   "name": "Guzhangian",
+   "start": 500.5,
+   "end": 497,
+   "color": "#CCDFAA",
+   "parent": "Miaolingian",
+   "abbr": null
+  },
+  {
+   "name": "Paibian",
+   "start": 497,
+   "end": 494.2,
+   "color": "#CCEBAE",
+   "parent": "Furongian",
+   "abbr": null
+  },
+  {
+   "name": "Jiangshanian",
+   "start": 494.2,
+   "end": 491,
+   "color": "#D9F0BB",
+   "parent": "Furongian",
+   "abbr": null
+  },
+  {
+   "name": "Stage 10",
+   "start": 491,
+   "end": 486.85,
+   "color": "#E6F5C9",
+   "parent": "Furongian",
+   "abbr": null
+  },
+  {
+   "name": "Tremadocian",
+   "start": 486.85,
+   "end": 477.1,
+   "color": "#33A97E",
+   "parent": "Early Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Floian",
+   "start": 477.1,
+   "end": 471.3,
+   "color": "#41B087",
+   "parent": "Early Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Dapingian",
+   "start": 471.3,
+   "end": 469.4,
+   "color": "#66C092",
+   "parent": "Middle Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Darriwilian",
+   "start": 469.4,
+   "end": 458.2,
+   "color": "#74C69C",
+   "parent": "Middle Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Sandbian",
+   "start": 458.2,
+   "end": 452.8,
+   "color": "#8CD094",
+   "parent": "Late Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Katian",
+   "start": 452.8,
+   "end": 445.2,
+   "color": "#99D69F",
+   "parent": "Late Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Hirnantian",
+   "start": 445.2,
+   "end": 443.1,
+   "color": "#A6DBAB",
+   "parent": "Late Ordovician",
+   "abbr": null
+  },
+  {
+   "name": "Rhuddanian",
+   "start": 443.1,
+   "end": 440.5,
+   "color": "#A6DCB5",
+   "parent": "Llandovery",
+   "abbr": null
+  },
+  {
+   "name": "Aeronian",
+   "start": 440.5,
+   "end": 438.6,
+   "color": "#B3E1C2",
+   "parent": "Llandovery",
+   "abbr": null
+  },
+  {
+   "name": "Telychian",
+   "start": 438.6,
+   "end": 432.9,
+   "color": "#BFE6CF",
+   "parent": "Llandovery",
+   "abbr": null
+  },
+  {
+   "name": "Sheinwoodian",
+   "start": 432.9,
+   "end": 430.6,
+   "color": "#BFE6C3",
+   "parent": "Wenlock",
+   "abbr": null
+  },
+  {
+   "name": "Homerian",
+   "start": 430.6,
+   "end": 426.7,
+   "color": "#CCEBD1",
+   "parent": "Wenlock",
+   "abbr": null
+  },
+  {
+   "name": "Gorstian",
+   "start": 426.7,
+   "end": 425,
+   "color": "#CCECDD",
+   "parent": "Ludlow",
+   "abbr": null
+  },
+  {
+   "name": "Ludfordian",
+   "start": 425,
+   "end": 422.7,
+   "color": "#D9F0DF",
+   "parent": "Ludlow",
+   "abbr": null
+  },
+  {
+   "name": "Lochkovian",
+   "start": 419.62,
+   "end": 413.02,
+   "color": "#E5B75A",
+   "parent": "Early Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Pragian",
+   "start": 413.02,
+   "end": 410.62,
+   "color": "#E5C468",
+   "parent": "Early Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Emsian",
+   "start": 410.62,
+   "end": 393.47,
+   "color": "#E5D075",
+   "parent": "Early Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Eifelian",
+   "start": 393.47,
+   "end": 387.95,
+   "color": "#F1D576",
+   "parent": "Middle Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Givetian",
+   "start": 387.95,
+   "end": 382.31,
+   "color": "#F1E185",
+   "parent": "Middle Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Frasnian",
+   "start": 382.31,
+   "end": 372.15,
+   "color": "#F2EDAD",
+   "parent": "Late Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Famennian",
+   "start": 372.15,
+   "end": 358.86,
+   "color": "#F2EDC5",
+   "parent": "Late Devonian",
+   "abbr": null
+  },
+  {
+   "name": "Tournaisian",
+   "start": 358.86,
+   "end": 346.7,
+   "color": "#8CB06C",
+   "parent": "Mississippian",
+   "abbr": null
+  },
+  {
+   "name": "Visean",
+   "start": 346.7,
+   "end": 330.3,
+   "color": "#A6B96C",
+   "parent": "Mississippian",
+   "abbr": null
+  },
+  {
+   "name": "Serpukhovian",
+   "start": 330.3,
+   "end": 323.4,
+   "color": "#BFC26B",
+   "parent": "Mississippian",
+   "abbr": null
+  },
+  {
+   "name": "Bashkirian",
+   "start": 323.4,
+   "end": 315.2,
+   "color": "#99C2B5",
+   "parent": "Pennsylvanian",
+   "abbr": null
+  },
+  {
+   "name": "Moscovian",
+   "start": 315.2,
+   "end": 307,
+   "color": "#C7CBB9",
+   "parent": "Pennsylvanian",
+   "abbr": null
+  },
+  {
+   "name": "Kasimovian",
+   "start": 307,
+   "end": 303.7,
+   "color": "#BFD0C5",
+   "parent": "Pennsylvanian",
+   "abbr": null
+  },
+  {
+   "name": "Gzhelian",
+   "start": 303.7,
+   "end": 298.9,
+   "color": "#CCD4C7",
+   "parent": "Pennsylvanian",
+   "abbr": null
+  },
+  {
+   "name": "Asselian",
+   "start": 298.9,
+   "end": 293.52,
+   "color": "#E36350",
+   "parent": "Cisuralian",
+   "abbr": null
+  },
+  {
+   "name": "Sakmarian",
+   "start": 293.52,
+   "end": 290.1,
+   "color": "#E36F5C",
+   "parent": "Cisuralian",
+   "abbr": null
+  },
+  {
+   "name": "Artinskian",
+   "start": 290.1,
+   "end": 283.3,
+   "color": "#E37B68",
+   "parent": "Cisuralian",
+   "abbr": null
+  },
+  {
+   "name": "Kungurian",
+   "start": 283.3,
+   "end": 274.4,
+   "color": "#E38776",
+   "parent": "Cisuralian",
+   "abbr": null
+  },
+  {
+   "name": "Roadian",
+   "start": 274.4,
+   "end": 266.9,
+   "color": "#FB8069",
+   "parent": "Guadalupian",
+   "abbr": null
+  },
+  {
+   "name": "Wordian",
+   "start": 266.9,
+   "end": 264.28,
+   "color": "#FB8D76",
+   "parent": "Guadalupian",
+   "abbr": null
+  },
+  {
+   "name": "Capitanian",
+   "start": 264.28,
+   "end": 259.857,
+   "color": "#FB9A85",
+   "parent": "Guadalupian",
+   "abbr": null
+  },
+  {
+   "name": "Wuchiapingian",
+   "start": 259.857,
+   "end": 254.14,
+   "color": "#FCB4A2",
+   "parent": "Lopingian",
+   "abbr": null
+  },
+  {
+   "name": "Changhsingian",
+   "start": 254.14,
+   "end": 251.902,
+   "color": "#FCC0B2",
+   "parent": "Lopingian",
+   "abbr": null
+  },
+  {
+   "name": "Induan",
+   "start": 251.902,
+   "end": 250.8,
+   "color": "#A4469F",
+   "parent": "Early Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Olenekian",
+   "start": 250.8,
+   "end": 247,
+   "color": "#B051A5",
+   "parent": "Early Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Anisian",
+   "start": 247,
+   "end": 241.464,
+   "color": "#BC75B7",
+   "parent": "Middle Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Ladinian",
+   "start": 241.464,
+   "end": 237,
+   "color": "#C983BF",
+   "parent": "Middle Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Carnian",
+   "start": 237,
+   "end": 227.3,
+   "color": "#C99BCB",
+   "parent": "Late Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Norian",
+   "start": 227.3,
+   "end": 205.7,
+   "color": "#D6AAD3",
+   "parent": "Late Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Rhaetian",
+   "start": 205.7,
+   "end": 201.4,
+   "color": "#E3B9DB",
+   "parent": "Late Triassic",
+   "abbr": null
+  },
+  {
+   "name": "Hettangian",
+   "start": 201.4,
+   "end": 199.5,
+   "color": "#4EB3D3",
+   "parent": "Early Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Sinemurian",
+   "start": 199.5,
+   "end": 192.9,
+   "color": "#67BCD8",
+   "parent": "Early Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Pliensbachian",
+   "start": 192.9,
+   "end": 184.2,
+   "color": "#80C5DD",
+   "parent": "Early Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Toarcian",
+   "start": 184.2,
+   "end": 174.7,
+   "color": "#99CEE3",
+   "parent": "Early Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Aalenian",
+   "start": 174.7,
+   "end": 170.9,
+   "color": "#9AD9DD",
+   "parent": "Middle Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Bajocian",
+   "start": 170.9,
+   "end": 168.2,
+   "color": "#A6DDE0",
+   "parent": "Middle Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Bathonian",
+   "start": 168.2,
+   "end": 165.3,
+   "color": "#B3E2E3",
+   "parent": "Middle Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Callovian",
+   "start": 165.3,
+   "end": 161.5,
+   "color": "#BFE7E5",
+   "parent": "Middle Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Oxfordian",
+   "start": 161.5,
+   "end": 154.8,
+   "color": "#BFE7F1",
+   "parent": "Late Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Kimmeridgian",
+   "start": 154.8,
+   "end": 149.2,
+   "color": "#CCECF4",
+   "parent": "Late Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Tithonian",
+   "start": 149.2,
+   "end": 143.1,
+   "color": "#D9F1F7",
+   "parent": "Late Jurassic",
+   "abbr": null
+  },
+  {
+   "name": "Berriasian",
+   "start": 143.1,
+   "end": 137.05,
+   "color": "#8CCD60",
+   "parent": "Early Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Valanginian",
+   "start": 137.05,
+   "end": 132.6,
+   "color": "#99D36A",
+   "parent": "Early Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Hauterivian",
+   "start": 132.6,
+   "end": 125.77,
+   "color": "#A6D975",
+   "parent": "Early Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Barremian",
+   "start": 125.77,
+   "end": 121.4,
+   "color": "#B3DF7F",
+   "parent": "Early Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Aptian",
+   "start": 121.4,
+   "end": 113.2,
+   "color": "#BFE48A",
+   "parent": "Early Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Albian",
+   "start": 113.2,
+   "end": 100.5,
+   "color": "#CCEA97",
+   "parent": "Early Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Cenomanian",
+   "start": 100.5,
+   "end": 93.9,
+   "color": "#B3DE53",
+   "parent": "Late Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Turonian",
+   "start": 93.9,
+   "end": 89.8,
+   "color": "#BFE35D",
+   "parent": "Late Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Coniacian",
+   "start": 89.8,
+   "end": 85.7,
+   "color": "#CCE968",
+   "parent": "Late Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Santonian",
+   "start": 85.7,
+   "end": 83.6,
+   "color": "#D9EF74",
+   "parent": "Late Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Campanian",
+   "start": 83.6,
+   "end": 72.2,
+   "color": "#E6F47F",
+   "parent": "Late Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Maastrichtian",
+   "start": 72.2,
+   "end": 66,
+   "color": "#F2FA8C",
+   "parent": "Late Cretaceous",
+   "abbr": null
+  },
+  {
+   "name": "Danian",
+   "start": 66,
+   "end": 61.66,
+   "color": "#FDB462",
+   "parent": "Paleocene",
+   "abbr": null
+  },
+  {
+   "name": "Selandian",
+   "start": 61.66,
+   "end": 59.24,
+   "color": "#FEBF65",
+   "parent": "Paleocene",
+   "abbr": null
+  },
+  {
+   "name": "Thanetian",
+   "start": 59.24,
+   "end": 56,
+   "color": "#FDBF6F",
+   "parent": "Paleocene",
+   "abbr": null
+  },
+  {
+   "name": "Ypresian",
+   "start": 56,
+   "end": 48.07,
+   "color": "#FCA773",
+   "parent": "Eocene",
+   "abbr": null
+  },
+  {
+   "name": "Lutetian",
+   "start": 48.07,
+   "end": 41.03,
+   "color": "#FCB482",
+   "parent": "Eocene",
+   "abbr": null
+  },
+  {
+   "name": "Bartonian",
+   "start": 41.03,
+   "end": 37.71,
+   "color": "#FDC091",
+   "parent": "Eocene",
+   "abbr": null
+  },
+  {
+   "name": "Priabonian",
+   "start": 37.71,
+   "end": 33.9,
+   "color": "#FDCDA1",
+   "parent": "Eocene",
+   "abbr": null
+  },
+  {
+   "name": "Rupelian",
+   "start": 33.9,
+   "end": 27.3,
+   "color": "#FED99A",
+   "parent": "Oligocene",
+   "abbr": null
+  },
+  {
+   "name": "Chattian",
+   "start": 27.3,
+   "end": 23.04,
+   "color": "#FEE6AA",
+   "parent": "Oligocene",
+   "abbr": null
+  },
+  {
+   "name": "Aquitanian",
+   "start": 23.04,
+   "end": 20.45,
+   "color": "#FFFF33",
+   "parent": "Miocene",
+   "abbr": null
+  },
+  {
+   "name": "Burdigalian",
+   "start": 20.45,
+   "end": 15.98,
+   "color": "#FFFF41",
+   "parent": "Miocene",
+   "abbr": null
+  },
+  {
+   "name": "Langhian",
+   "start": 15.98,
+   "end": 13.82,
+   "color": "#FFFF4D",
+   "parent": "Miocene",
+   "abbr": null
+  },
+  {
+   "name": "Serravallian",
+   "start": 13.82,
+   "end": 11.63,
+   "color": "#FFFF59",
+   "parent": "Miocene",
+   "abbr": null
+  },
+  {
+   "name": "Tortonian",
+   "start": 11.63,
+   "end": 7.246,
+   "color": "#FFFF66",
+   "parent": "Miocene",
+   "abbr": null
+  },
+  {
+   "name": "Messinian",
+   "start": 7.246,
+   "end": 5.333,
+   "color": "#FFFF73",
+   "parent": "Miocene",
+   "abbr": null
+  },
+  {
+   "name": "Zanclean",
+   "start": 5.333,
+   "end": 3.6,
+   "color": "#FFFFB3",
+   "parent": "Pliocene",
+   "abbr": null
+  },
+  {
+   "name": "Piacenzian",
+   "start": 3.6,
+   "end": 2.58,
+   "color": "#FFFFBF",
+   "parent": "Pliocene",
+   "abbr": null
+  },
+  {
+   "name": "Gelasian",
+   "start": 2.58,
+   "end": 1.8,
+   "color": "#FFEDB3",
+   "parent": "Pleistocene",
+   "abbr": null
+  },
+  {
+   "name": "Calabrian",
+   "start": 1.8,
+   "end": 0.774,
+   "color": "#FFF2C7",
+   "parent": "Pleistocene",
+   "abbr": null
+  },
+  {
+   "name": "Chibanian",
+   "start": 0.774,
+   "end": 0.129,
+   "color": "#FFF2C7",
+   "parent": "Pleistocene",
+   "abbr": null
+  },
+  {
+   "name": "Late Pleistocene",
+   "start": 0.129,
+   "end": 0.0117,
+   "color": "#FFF2C7",
+   "parent": "Pleistocene",
+   "abbr": null
+  },
+  {
+   "name": "Greenlandian",
+   "start": 0.0117,
+   "end": 0.0082,
+   "color": "#FEF2E0",
+   "parent": "Holocene",
+   "abbr": null
+  },
+  {
+   "name": "Northgrippian",
+   "start": 0.0082,
+   "end": 0.0042,
+   "color": "#FEF2E0",
+   "parent": "Holocene",
+   "abbr": null
+  },
+  {
+   "name": "Meghalayan",
+   "start": 0.0042,
+   "end": 0,
+   "color": "#FEF2E0",
+   "parent": "Holocene",
+   "abbr": null
+  }
+ ]
+}

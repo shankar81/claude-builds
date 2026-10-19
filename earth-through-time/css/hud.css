@@ -1,0 +1,126 @@
+/* HUD: date, planet conditions, toolbar. Filled in by js/ui/Hud.js (Phase 4). */
+
+.hud {
+  position: absolute;
+  top: var(--gutter);
+  left: var(--gutter);
+  z-index: 20;
+  pointer-events: none;
+  max-width: calc(100vw - 2 * var(--gutter));
+}
+.hud > * { pointer-events: auto; }
+
+.toolbar {
+  position: absolute;
+  top: var(--gutter);
+  right: var(--gutter);
+  z-index: 25;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: calc(100vw - 2 * var(--gutter));
+}
+
+/* Map labels (js/globe/Labels.js) */
+.map-labels { position: absolute; inset: 0; pointer-events: none; z-index: 5; overflow: hidden; }
+.map-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(255, 246, 228, 0.96);
+  text-shadow: 0 1px 2px #000, 0 0 6px rgba(0, 0, 0, .95), 0 0 14px rgba(0, 0, 0, .7);
+  will-change: transform, opacity;
+  opacity: 0;
+}
+.map-label.kind-super { font-size: 18px; letter-spacing: .24em; color: #ffe2a8; }
+.map-label.kind-ocean { font-style: italic; text-transform: none; letter-spacing: .08em; font-weight: 500; font-size: 14px; color: rgba(200, 230, 255, .95); }
+.map-label.spec::after { content: " ?"; color: var(--spec); }
+:root[data-labels="off"] .map-labels { display: none; }
+:root[data-contrast="high"] .map-label { color: #fff; text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+/* Planet-conditions card (js/ui/Hud.js) */
+.hud-card { padding: 8px 10px; width: min(560px, calc(100vw - 2 * var(--gutter) - 60px)); }
+.hud-head { display: flex; align-items: center; gap: 8px; min-height: 28px; }
+.hud-state {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hud-more { min-height: 28px; min-width: 28px; padding: 3px; border: 0; background: transparent; }
+.hud-more svg { transition: transform var(--dur) var(--ease); }
+.hud-card.collapsed .hud-more svg { transform: rotate(-90deg); }
+.hud-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 4px 10px;
+  margin: 6px 0 0;
+}
+.hud-card.collapsed .hud-stats { display: none; }
+.hud-stat { min-width: 0; border-radius: 6px; padding: 2px 2px; outline-offset: 1px; }
+.hud-stat dt { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--text-faint); }
+.hud-stat dd { margin: 0; display: flex; flex-direction: column; }
+.hud-stat .v { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.hud-stat .r { font-size: 10px; color: var(--text-faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-height: 1.2em; }
+
+/* Toolbar */
+.toolbar .tool { background: var(--panel); backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur); }
+.toolbar .tool-label { display: none; }
+@media (min-width: 1480px) {
+  .toolbar .tool { padding: 6px 10px; }
+  .toolbar .tool-label { display: inline; font-size: 12px; }
+}
+/* Mid-size windows: the HUD card and a full toolbar do not fit side by side. */
+@media (min-width: 601px) and (max-width: 1010px) {
+  .toolbar { top: calc(var(--gutter) + var(--hud-h, 50px) + 8px); }
+}
+@media (max-width: 600px) {
+  .hud-card { width: calc(100vw - 2 * var(--gutter)); }
+  /* A single scrollable row under the HUD keeps the lower screen free for captions and controls. */
+  .toolbar {
+    top: calc(var(--gutter) + var(--hud-h, 50px) + 8px);
+    left: var(--gutter);
+    right: var(--gutter);
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .toolbar::-webkit-scrollbar { display: none; }
+  .toolbar .tool { flex: none; }
+}
+
+/* Deep Dive controls (js/dive/DiveMode.js) */
+.dive-ui {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--timeline-h) + 2 * var(--gutter) + 8px);
+  transform: translateX(-50%);
+  z-index: 28;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  max-width: calc(100vw - 2 * var(--gutter));
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dive-modes { display: flex; gap: 4px; }
+.dive-modes .btn span, .dive-exit span { font-size: 12.5px; }
+.dive-help { margin: 0; font-size: 11.5px; color: var(--text-dim); }
+.dive-note { margin: 0; font-size: 12px; color: var(--accent-2); flex-basis: 100%; text-align: center; }
+.dive-note:empty { display: none; }
+.dive-help kbd { font: 600 10.5px var(--font-mono); padding: 1px 4px; border: 1px solid var(--panel-border); border-radius: 4px; }
+:root.diving .map-labels { display: none; }
+:root.diving #view { cursor: crosshair; }
+@media (pointer: coarse) { .dive-help { display: none; } }

@@ -1,0 +1,1367 @@
+{
+ "width": 360,
+ "height": 180,
+ "encoding": "RGB: R = signed-sqrt elevation (10 km), G = distance to coast / 10 km, B = plate index + 1 (when plates: true)",
+ "sources": [
+  {
+   "file": "paleodem.json",
+   "label": "PALEOMAP PaleoDEM (Scotese & Wright 2018)",
+   "citation": "Scotese & Wright (2018) PALEOMAP PaleoDEMs, doi:10.5281/zenodo.5460860, CC BY 4.0",
+   "count": 109
+  },
+  {
+   "file": "neoproterozoic.json",
+   "label": "PALEOMAP reconstructed coastlines (Scotese 2016), rasterised",
+   "citation": "Reconstructed coastlines: PALEOMAP (Scotese 2016) 550–750 Ma; MERDITH2021 (Merdith et al. 2021) 760–1000 Ma; via GPlates Web Service. Elevation synthesised.",
+   "count": 34
+  },
+  {
+   "file": "speculative.json",
+   "label": "Illustrative early-Earth geography (no consensus reconstruction)",
+   "citation": "Procedural illustration (no consensus reconstruction exists before ~1 Ga); land fractions and supercontinent phases follow the literature cited in pipeline/build-speculative.mjs",
+   "count": 13
+  },
+  {
+   "file": "future.json",
+   "label": "Extrapolated present-day plate motions (PALEOMAP stage rotations)",
+   "citation": "Speculative: ETOPO1 relief moved along extrapolated PALEOMAP plate motions (10 Ma → present stage rotations)",
+   "count": 14
+  }
+ ],
+ "slices": [
+  {
+   "ageMa": -250,
+   "file": "future-0250.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.328,
+   "plates": true
+  },
+  {
+   "ageMa": -225,
+   "file": "future-0225.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.322,
+   "plates": true
+  },
+  {
+   "ageMa": -200,
+   "file": "future-0200.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.317,
+   "plates": true
+  },
+  {
+   "ageMa": -175,
+   "file": "future-0175.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.305,
+   "plates": true
+  },
+  {
+   "ageMa": -150,
+   "file": "future-0150.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.298,
+   "plates": true
+  },
+  {
+   "ageMa": -125,
+   "file": "future-0125.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.301,
+   "plates": true
+  },
+  {
+   "ageMa": -100,
+   "file": "future-0100.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.309,
+   "plates": true
+  },
+  {
+   "ageMa": -75,
+   "file": "future-0075.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.313,
+   "plates": true
+  },
+  {
+   "ageMa": -50,
+   "file": "future-0050.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.322,
+   "plates": true
+  },
+  {
+   "ageMa": -40,
+   "file": "future-0040.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.326,
+   "plates": true
+  },
+  {
+   "ageMa": -30,
+   "file": "future-0030.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.33,
+   "plates": true
+  },
+  {
+   "ageMa": -20,
+   "file": "future-0020.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.332,
+   "plates": true
+  },
+  {
+   "ageMa": -10,
+   "file": "future-0010.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.334,
+   "plates": true
+  },
+  {
+   "ageMa": -5,
+   "file": "future-0005.png",
+   "source": "future",
+   "confidence": "speculative",
+   "land": 0.333,
+   "plates": true
+  },
+  {
+   "ageMa": 0,
+   "file": "paleodem-0000.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.285,
+   "plates": true
+  },
+  {
+   "ageMa": 5,
+   "file": "paleodem-0005.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.296,
+   "plates": true
+  },
+  {
+   "ageMa": 10,
+   "file": "paleodem-0010.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.305,
+   "plates": true
+  },
+  {
+   "ageMa": 15,
+   "file": "paleodem-0015.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.307,
+   "plates": true
+  },
+  {
+   "ageMa": 20,
+   "file": "paleodem-0020.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.309,
+   "plates": true
+  },
+  {
+   "ageMa": 25,
+   "file": "paleodem-0025.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.314,
+   "plates": true
+  },
+  {
+   "ageMa": 30,
+   "file": "paleodem-0030.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.314,
+   "plates": true
+  },
+  {
+   "ageMa": 35,
+   "file": "paleodem-0035.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.317,
+   "plates": true
+  },
+  {
+   "ageMa": 40,
+   "file": "paleodem-0040.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.323,
+   "plates": true
+  },
+  {
+   "ageMa": 45,
+   "file": "paleodem-0045.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.3,
+   "plates": true
+  },
+  {
+   "ageMa": 50,
+   "file": "paleodem-0050.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.277,
+   "plates": true
+  },
+  {
+   "ageMa": 55,
+   "file": "paleodem-0055.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.283,
+   "plates": true
+  },
+  {
+   "ageMa": 60,
+   "file": "paleodem-0060.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.288,
+   "plates": true
+  },
+  {
+   "ageMa": 65,
+   "file": "paleodem-0065.png",
+   "source": "paleodem",
+   "confidence": "well",
+   "land": 0.292,
+   "plates": true
+  },
+  {
+   "ageMa": 70,
+   "file": "paleodem-0070.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.298,
+   "plates": true
+  },
+  {
+   "ageMa": 75,
+   "file": "paleodem-0075.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.251,
+   "plates": true
+  },
+  {
+   "ageMa": 80,
+   "file": "paleodem-0080.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.225,
+   "plates": true
+  },
+  {
+   "ageMa": 85,
+   "file": "paleodem-0085.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.237,
+   "plates": true
+  },
+  {
+   "ageMa": 90,
+   "file": "paleodem-0090.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.251,
+   "plates": true
+  },
+  {
+   "ageMa": 95,
+   "file": "paleodem-0095.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.264,
+   "plates": true
+  },
+  {
+   "ageMa": 100,
+   "file": "paleodem-0100.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.273,
+   "plates": true
+  },
+  {
+   "ageMa": 105,
+   "file": "paleodem-0105.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.277,
+   "plates": true
+  },
+  {
+   "ageMa": 110,
+   "file": "paleodem-0110.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.279,
+   "plates": true
+  },
+  {
+   "ageMa": 115,
+   "file": "paleodem-0115.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.276,
+   "plates": true
+  },
+  {
+   "ageMa": 120,
+   "file": "paleodem-0120.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.269,
+   "plates": true
+  },
+  {
+   "ageMa": 125,
+   "file": "paleodem-0125.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.28,
+   "plates": true
+  },
+  {
+   "ageMa": 130,
+   "file": "paleodem-0130.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.301,
+   "plates": true
+  },
+  {
+   "ageMa": 135,
+   "file": "paleodem-0135.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.309,
+   "plates": true
+  },
+  {
+   "ageMa": 140,
+   "file": "paleodem-0140.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.321,
+   "plates": true
+  },
+  {
+   "ageMa": 145,
+   "file": "paleodem-0145.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.319,
+   "plates": true
+  },
+  {
+   "ageMa": 150,
+   "file": "paleodem-0150.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.318,
+   "plates": true
+  },
+  {
+   "ageMa": 155,
+   "file": "paleodem-0155.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.31,
+   "plates": true
+  },
+  {
+   "ageMa": 160,
+   "file": "paleodem-0160.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.291,
+   "plates": true
+  },
+  {
+   "ageMa": 165,
+   "file": "paleodem-0165.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.296,
+   "plates": true
+  },
+  {
+   "ageMa": 170,
+   "file": "paleodem-0170.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.306,
+   "plates": true
+  },
+  {
+   "ageMa": 175,
+   "file": "paleodem-0175.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.318,
+   "plates": true
+  },
+  {
+   "ageMa": 180,
+   "file": "paleodem-0180.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.345,
+   "plates": true
+  },
+  {
+   "ageMa": 185,
+   "file": "paleodem-0185.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.332,
+   "plates": true
+  },
+  {
+   "ageMa": 190,
+   "file": "paleodem-0190.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.33,
+   "plates": true
+  },
+  {
+   "ageMa": 195,
+   "file": "paleodem-0195.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.335,
+   "plates": true
+  },
+  {
+   "ageMa": 200,
+   "file": "paleodem-0200.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.351,
+   "plates": true
+  },
+  {
+   "ageMa": 205,
+   "file": "paleodem-0205.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.347,
+   "plates": true
+  },
+  {
+   "ageMa": 210,
+   "file": "paleodem-0210.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.343,
+   "plates": true
+  },
+  {
+   "ageMa": 215,
+   "file": "paleodem-0215.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.342,
+   "plates": true
+  },
+  {
+   "ageMa": 220,
+   "file": "paleodem-0220.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.326,
+   "plates": true
+  },
+  {
+   "ageMa": 225,
+   "file": "paleodem-0225.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.322,
+   "plates": true
+  },
+  {
+   "ageMa": 230,
+   "file": "paleodem-0230.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.346,
+   "plates": true
+  },
+  {
+   "ageMa": 235,
+   "file": "paleodem-0235.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.351,
+   "plates": true
+  },
+  {
+   "ageMa": 240,
+   "file": "paleodem-0240.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.361,
+   "plates": true
+  },
+  {
+   "ageMa": 245,
+   "file": "paleodem-0245.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.344,
+   "plates": true
+  },
+  {
+   "ageMa": 250,
+   "file": "paleodem-0250.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.296,
+   "plates": true
+  },
+  {
+   "ageMa": 255,
+   "file": "paleodem-0255.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.28,
+   "plates": true
+  },
+  {
+   "ageMa": 260,
+   "file": "paleodem-0260.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.26,
+   "plates": true
+  },
+  {
+   "ageMa": 265,
+   "file": "paleodem-0265.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.261,
+   "plates": true
+  },
+  {
+   "ageMa": 270,
+   "file": "paleodem-0270.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.26,
+   "plates": true
+  },
+  {
+   "ageMa": 275,
+   "file": "paleodem-0275.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.254,
+   "plates": true
+  },
+  {
+   "ageMa": 280,
+   "file": "paleodem-0280.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.244,
+   "plates": true
+  },
+  {
+   "ageMa": 285,
+   "file": "paleodem-0285.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.24,
+   "plates": true
+  },
+  {
+   "ageMa": 290,
+   "file": "paleodem-0290.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.24,
+   "plates": true
+  },
+  {
+   "ageMa": 295,
+   "file": "paleodem-0295.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.232,
+   "plates": true
+  },
+  {
+   "ageMa": 300,
+   "file": "paleodem-0300.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.222,
+   "plates": true
+  },
+  {
+   "ageMa": 305,
+   "file": "paleodem-0305.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.23,
+   "plates": true
+  },
+  {
+   "ageMa": 310,
+   "file": "paleodem-0310.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.237,
+   "plates": true
+  },
+  {
+   "ageMa": 315,
+   "file": "paleodem-0315.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.244,
+   "plates": true
+  },
+  {
+   "ageMa": 320,
+   "file": "paleodem-0320.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.248,
+   "plates": true
+  },
+  {
+   "ageMa": 325,
+   "file": "paleodem-0325.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.245,
+   "plates": true
+  },
+  {
+   "ageMa": 330,
+   "file": "paleodem-0330.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.236,
+   "plates": true
+  },
+  {
+   "ageMa": 335,
+   "file": "paleodem-0335.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.224,
+   "plates": true
+  },
+  {
+   "ageMa": 340,
+   "file": "paleodem-0340.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.215,
+   "plates": true
+  },
+  {
+   "ageMa": 345,
+   "file": "paleodem-0345.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.212,
+   "plates": true
+  },
+  {
+   "ageMa": 350,
+   "file": "paleodem-0350.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.211,
+   "plates": true
+  },
+  {
+   "ageMa": 355,
+   "file": "paleodem-0355.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.195,
+   "plates": true
+  },
+  {
+   "ageMa": 360,
+   "file": "paleodem-0360.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.184,
+   "plates": true
+  },
+  {
+   "ageMa": 365,
+   "file": "paleodem-0365.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.177,
+   "plates": true
+  },
+  {
+   "ageMa": 370,
+   "file": "paleodem-0370.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.171,
+   "plates": true
+  },
+  {
+   "ageMa": 375,
+   "file": "paleodem-0375.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.163,
+   "plates": true
+  },
+  {
+   "ageMa": 380,
+   "file": "paleodem-0380.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.155,
+   "plates": true
+  },
+  {
+   "ageMa": 385,
+   "file": "paleodem-0385.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.158,
+   "plates": true
+  },
+  {
+   "ageMa": 390,
+   "file": "paleodem-0390.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.168,
+   "plates": true
+  },
+  {
+   "ageMa": 395,
+   "file": "paleodem-0395.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.168,
+   "plates": true
+  },
+  {
+   "ageMa": 400,
+   "file": "paleodem-0400.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.164,
+   "plates": true
+  },
+  {
+   "ageMa": 405,
+   "file": "paleodem-0405.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.165,
+   "plates": true
+  },
+  {
+   "ageMa": 410,
+   "file": "paleodem-0410.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.166,
+   "plates": true
+  },
+  {
+   "ageMa": 415,
+   "file": "paleodem-0415.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.158,
+   "plates": true
+  },
+  {
+   "ageMa": 420,
+   "file": "paleodem-0420.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.155,
+   "plates": true
+  },
+  {
+   "ageMa": 425,
+   "file": "paleodem-0425.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.151,
+   "plates": true
+  },
+  {
+   "ageMa": 430,
+   "file": "paleodem-0430.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.145,
+   "plates": true
+  },
+  {
+   "ageMa": 435,
+   "file": "paleodem-0435.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.177,
+   "plates": true
+  },
+  {
+   "ageMa": 440,
+   "file": "paleodem-0440.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.184,
+   "plates": true
+  },
+  {
+   "ageMa": 445,
+   "file": "paleodem-0445.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.18,
+   "plates": true
+  },
+  {
+   "ageMa": 450,
+   "file": "paleodem-0450.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.176,
+   "plates": true
+  },
+  {
+   "ageMa": 455,
+   "file": "paleodem-0455.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.171,
+   "plates": true
+  },
+  {
+   "ageMa": 460,
+   "file": "paleodem-0460.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.169,
+   "plates": true
+  },
+  {
+   "ageMa": 465,
+   "file": "paleodem-0465.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.168,
+   "plates": true
+  },
+  {
+   "ageMa": 470,
+   "file": "paleodem-0470.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.164,
+   "plates": true
+  },
+  {
+   "ageMa": 475,
+   "file": "paleodem-0475.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.162,
+   "plates": true
+  },
+  {
+   "ageMa": 480,
+   "file": "paleodem-0480.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.164,
+   "plates": true
+  },
+  {
+   "ageMa": 485,
+   "file": "paleodem-0485.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.166,
+   "plates": true
+  },
+  {
+   "ageMa": 490,
+   "file": "paleodem-0490.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.169,
+   "plates": true
+  },
+  {
+   "ageMa": 495,
+   "file": "paleodem-0495.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.17,
+   "plates": true
+  },
+  {
+   "ageMa": 500,
+   "file": "paleodem-0500.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.171,
+   "plates": true
+  },
+  {
+   "ageMa": 505,
+   "file": "paleodem-0505.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.169,
+   "plates": true
+  },
+  {
+   "ageMa": 510,
+   "file": "paleodem-0510.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.17,
+   "plates": true
+  },
+  {
+   "ageMa": 515,
+   "file": "paleodem-0515.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.163,
+   "plates": true
+  },
+  {
+   "ageMa": 520,
+   "file": "paleodem-0520.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.157,
+   "plates": true
+  },
+  {
+   "ageMa": 525,
+   "file": "paleodem-0525.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.165,
+   "plates": true
+  },
+  {
+   "ageMa": 530,
+   "file": "paleodem-0530.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.174,
+   "plates": true
+  },
+  {
+   "ageMa": 535,
+   "file": "paleodem-0535.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.182,
+   "plates": true
+  },
+  {
+   "ageMa": 540,
+   "file": "paleodem-0540.png",
+   "source": "paleodem",
+   "confidence": "modeled",
+   "land": 0.186,
+   "plates": true
+  },
+  {
+   "ageMa": 550,
+   "file": "neo-0550.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.258,
+   "plates": true
+  },
+  {
+   "ageMa": 560,
+   "file": "neo-0560.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.258,
+   "plates": true
+  },
+  {
+   "ageMa": 570,
+   "file": "neo-0570.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.257,
+   "plates": true
+  },
+  {
+   "ageMa": 580,
+   "file": "neo-0580.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.257,
+   "plates": true
+  },
+  {
+   "ageMa": 590,
+   "file": "neo-0590.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.256,
+   "plates": true
+  },
+  {
+   "ageMa": 600,
+   "file": "neo-0600.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.256,
+   "plates": true
+  },
+  {
+   "ageMa": 610,
+   "file": "neo-0610.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.148,
+   "plates": true
+  },
+  {
+   "ageMa": 620,
+   "file": "neo-0620.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.148,
+   "plates": true
+  },
+  {
+   "ageMa": 630,
+   "file": "neo-0630.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.149,
+   "plates": true
+  },
+  {
+   "ageMa": 640,
+   "file": "neo-0640.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.149,
+   "plates": true
+  },
+  {
+   "ageMa": 650,
+   "file": "neo-0650.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.149,
+   "plates": true
+  },
+  {
+   "ageMa": 660,
+   "file": "neo-0660.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.149,
+   "plates": true
+  },
+  {
+   "ageMa": 670,
+   "file": "neo-0670.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.149,
+   "plates": true
+  },
+  {
+   "ageMa": 680,
+   "file": "neo-0680.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.15,
+   "plates": true
+  },
+  {
+   "ageMa": 690,
+   "file": "neo-0690.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.15,
+   "plates": true
+  },
+  {
+   "ageMa": 700,
+   "file": "neo-0700.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.15,
+   "plates": true
+  },
+  {
+   "ageMa": 710,
+   "file": "neo-0710.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.15,
+   "plates": true
+  },
+  {
+   "ageMa": 720,
+   "file": "neo-0720.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.15,
+   "plates": true
+  },
+  {
+   "ageMa": 730,
+   "file": "neo-0730.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.151,
+   "plates": true
+  },
+  {
+   "ageMa": 740,
+   "file": "neo-0740.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.151,
+   "plates": true
+  },
+  {
+   "ageMa": 750,
+   "file": "neo-0750.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.149,
+   "plates": true
+  },
+  {
+   "ageMa": 760,
+   "file": "neo-0760.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.168
+  },
+  {
+   "ageMa": 780,
+   "file": "neo-0780.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.168
+  },
+  {
+   "ageMa": 800,
+   "file": "neo-0800.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.169
+  },
+  {
+   "ageMa": 820,
+   "file": "neo-0820.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.169
+  },
+  {
+   "ageMa": 840,
+   "file": "neo-0840.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.167
+  },
+  {
+   "ageMa": 860,
+   "file": "neo-0860.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.163
+  },
+  {
+   "ageMa": 880,
+   "file": "neo-0880.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.163
+  },
+  {
+   "ageMa": 900,
+   "file": "neo-0900.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.162
+  },
+  {
+   "ageMa": 920,
+   "file": "neo-0920.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.164
+  },
+  {
+   "ageMa": 940,
+   "file": "neo-0940.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.163
+  },
+  {
+   "ageMa": 960,
+   "file": "neo-0960.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.163
+  },
+  {
+   "ageMa": 980,
+   "file": "neo-0980.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.163
+  },
+  {
+   "ageMa": 1000,
+   "file": "neo-1000.png",
+   "source": "neoproterozoic",
+   "confidence": "modeled",
+   "land": 0.163
+  },
+  {
+   "ageMa": 1100,
+   "file": "spec-1100.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.233
+  },
+  {
+   "ageMa": 1300,
+   "file": "spec-1300.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.258
+  },
+  {
+   "ageMa": 1500,
+   "file": "spec-1500.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.231
+  },
+  {
+   "ageMa": 1750,
+   "file": "spec-1750.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.226
+  },
+  {
+   "ageMa": 1950,
+   "file": "spec-1950.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.205
+  },
+  {
+   "ageMa": 2200,
+   "file": "spec-2200.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.167
+  },
+  {
+   "ageMa": 2450,
+   "file": "spec-2450.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.155
+  },
+  {
+   "ageMa": 2700,
+   "file": "spec-2700.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.122
+  },
+  {
+   "ageMa": 3000,
+   "file": "spec-3000.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.087
+  },
+  {
+   "ageMa": 3300,
+   "file": "spec-3300.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.055
+  },
+  {
+   "ageMa": 3600,
+   "file": "spec-3600.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.034
+  },
+  {
+   "ageMa": 4000,
+   "file": "spec-4000.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.021
+  },
+  {
+   "ageMa": 4400,
+   "file": "spec-4400.png",
+   "source": "speculative",
+   "confidence": "speculative",
+   "land": 0.013
+  }
+ ]
+}

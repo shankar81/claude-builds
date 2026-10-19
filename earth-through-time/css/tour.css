@@ -1,0 +1,51 @@
+/* Guided tour caption panel (js/tour/Tour.js). */
+
+.tour-panel {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--timeline-h) + 2 * var(--gutter));
+  transform: translateX(-50%);
+  z-index: 23;
+  width: min(640px, calc(100vw - 2 * var(--gutter)));
+  padding: 12px 14px 10px;
+  display: grid;
+  gap: 6px;
+}
+.tour-panel[hidden] { display: none; }
+.tour-choose[hidden] { display: none; }
+.tour-panel.choosing .tour-stop-title,
+.tour-panel.choosing .tour-text,
+.tour-panel.choosing .tour-progress,
+.tour-panel.choosing .tour-controls { display: none; }
+.tour-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; margin-top: 8px; }
+.tour-option { display: grid; justify-items: start; align-content: start; justify-content: stretch; gap: 2px; text-align: left; padding: 10px 12px; white-space: normal; }
+.tour-option span { font-size: 12.5px; color: var(--text-dim); font-weight: 400; }
+.tour-head { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--text-faint); }
+.tour-count { letter-spacing: .06em; text-transform: uppercase; }
+.tour-age { color: var(--accent-2); font-weight: 600; margin-right: auto; }
+.tour-close { min-height: 28px; min-width: 28px; padding: 3px; }
+.tour-title { margin: 0; font-size: 18px; line-height: 1.25; }
+.tour-text { margin: 0; color: var(--text-dim); line-height: 1.5; max-height: 9em; overflow: auto; }
+.tour-progress { height: 3px; border-radius: 2px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+.tour-progress span { display: block; height: 100%; width: 0; background: var(--accent); transition: width 200ms linear; }
+.tour-controls { display: flex; align-items: center; gap: 6px; }
+.tour-play { display: inline-flex; align-items: center; gap: 6px; }
+.tour-play svg { width: 16px; height: 16px; }
+.tour-controls .flip { display: inline-flex; transform: scaleX(-1); }
+.tour-voice { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim); cursor: pointer; }
+.tour-voice[hidden] { display: none; }
+
+/* During a tour the dive controls drop their keyboard hint to save space. */
+:root.touring .dive-help { display: none; }
+/* In a dive the movement controls sit above the timeline; the caption goes above them. */
+:root.diving .tour-panel { bottom: calc(var(--timeline-h) + 2 * var(--gutter) + var(--dive-ui-h, 120px) + 10px); }
+
+/* The tour narrates compare stops itself; keep the divider but not the compare bar. */
+:root.touring .compare-bar { display: none; }
+
+@media (max-width: 600px) {
+  .tour-panel { padding: 10px; bottom: calc(var(--timeline-h) + var(--gutter)); }
+  .tour-title { font-size: 16px; }
+  .tour-text { max-height: 6.5em; font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .tour-progress span { transition: none; } }
